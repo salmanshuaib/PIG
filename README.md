@@ -1,4 +1,4 @@
-# T-HUD
+# T_HUD
 An experimental technology enabling comms between **_"SOURCE"_** and SOC pilot.
 
 + Imagine a formation of fighter jets with a squadron leader. The leader is in live communication with you, she is training you. Over the course of your trainee 
