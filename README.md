@@ -9,6 +9,6 @@ judgment - to the ramifications of your errors.
 
 + REQUIREMENTS:\
 -> TV: incoming transmissions\
--> Music: on shuffle  /DJ: "Taylor Swift"\
+-> Music: on shuffle  /DJ [Space Traffic Control]: "Taylor Swift"\
 -> Computer: running T_HUD
 
