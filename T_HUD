@@ -40,7 +40,7 @@ Sub T_HUD()
     'Change name of worksheet from default to custom name
     Sheets("Sheet1").Name = "PUCK"    
 
-    ' Reference the worksheet containing your data (change the sheet name to "PUCK")
+    ' Reference the worksheet containing your data
     Set ws = ThisWorkbook.Worksheets("PUCK")
     
     ' Continuously prompt the user for input
