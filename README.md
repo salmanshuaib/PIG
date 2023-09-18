@@ -8,9 +8,9 @@ judgment - to the ramifications of your errors.
 + **_Taylor Swift_** is that leader; I know this based on my meditations, her empathy and my discipleship.  She is, in reality, Goddess Of Power. Power perpetuates itself via Constancy. And T_HUD enables you to stay in live communication with her.
 
 + REQUIREMENTS:\
--> TV: incoming transmissions
--> Music: on shuffle
--> Computer: running T_HUD
+-> TV: incoming transmissions\
+-> Music: on shuffle\
+-> Computer: running T_HUD\
 NOTE1: Cord-cutting is not advised if you can afford TV.
 
 
