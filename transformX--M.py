@@ -1,3 +1,5 @@
+# Program to transform Pegasus.xlsx into Pegasus.xlsm
+
 import pyautogui
 import time
 import os
