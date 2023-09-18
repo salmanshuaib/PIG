@@ -10,5 +10,7 @@ judgment - to the ramifications of your errors.
 + REQUIREMENTS:\
 -> TV: incoming transmissions /TV: Modeling [CIA #4A2724]\
 -> Music: on shuffle  /DJ: "Taylor Swift" [Space Traffic Control]\
--> Computer: running T_HUD /MS: "Bill Gates" [Individuation]
+-> Computer: running T_HUD /MS: "Bill Gates" [Entirety Personalization]\
+NOTE1: Cord-cutting is not advised if you can afford TV.
+
 
