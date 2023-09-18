@@ -10,7 +10,7 @@
 ++ Assign MACRO to PICTURE at bottom-left of Pegasus.xlsm File. 
 ++++++++++++++++++++++++++++++++++CLICK ON THE PICTURE. YOU ARE READY++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 CAUTION: Do not share your team members' list with strangers; as this is a real-world (IMMERSIVEReality) technology. Its not a demo video game.
-
+ 
 
 --> C:\ If you're aiming to create a "setup wizard" experience for the user, then the toolset required will differ slightly. While VBA is still very relevant for direct Excel interactions, some parts of the tasks could be more efficiently handled outside of VBA for an automated experience.
 
