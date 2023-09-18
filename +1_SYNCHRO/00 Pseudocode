@@ -20,10 +20,12 @@ External Automation Tool:
 
 For tasks like opening the .xlsx file, converting it to .xlsm, and enabling the Developer tab, you might consider using an external automation tool like AutoHotkey or Python with libraries like pyautogui. These tools can script mouse movements, key presses, and other operations that mimic human interaction.
 These tools can be used to craft a wizard-like UI to guide the user through the steps.
+
 Data Entry and Note Insertion:
 
 This can still be handled using VBA. Once the user has the .xlsm file open, you could launch a UserForm that guides them through the process, asking them to input their BLUE TEAM and GREEN TEAM members and the associated notes for each.
 This UserForm would save the user's inputs directly into the Excel file in the required format and cells.
+
 Macro Insertion and Assignment:
 
 Importing the contents of a separate file as a macro is non-trivial in VBA due to security reasons. An external automation tool could be used to automate the process of opening the VBA editor, importing the file, and saving it.
