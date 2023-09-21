@@ -1,3 +1,35 @@
+-> C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with a Database (MySQL). "Pegasus" here is taken to be the name of a 
+Test Program flyingone's Sphere Of Consciousness (SOC). Here are the STEPS of our pseudocode for this program (plugin):
++ Promp the user to set 23 [BEEPS + NOTIFICATIONS] from the Computer for BLUE Team AND 22 [BEEPS + NOTIFICATIONS] from the computer for GREEN Team.
++ Prompt the user to enter a Text variable [BLUE Team member] AND an associated Text constant [COMMENT about an activity that is CONSTANT in their schedule].
+++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
++ Prompt the user to enter a Text variable [GREEN Team member] AND an associated Text value [COMMENT about a Yoga Posture they will do].
+++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
++ Once the foregoing SETUP is finished; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
 -> WOULD YOUR RECOMMENDATION BE THE SAME IF I REQUESTED THAT THE FOLLOWING (SAME) TASKS REQUIRE AUTOMATION - LIKE A "SETUP WIZARD":
 
 - How to enable your Sphere Of Consciousness [SOC]:
