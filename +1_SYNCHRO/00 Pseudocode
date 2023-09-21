@@ -1,11 +1,25 @@
--> C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with a Database (MySQL). "Pegasus" here is taken to be the name of a 
-Test Program flyingone's Sphere Of Consciousness (SOC). Here are the STEPS of our pseudocode for this program (plugin):
-+ Promp the user to set 23 [BEEPS + NOTIFICATIONS] from the Computer for BLUE Team AND 22 [BEEPS + NOTIFICATIONS] from the computer for GREEN Team.
-+ Prompt the user to enter a Text variable [BLUE Team member] AND an associated Text constant [COMMENT about an activity that is CONSTANT in their schedule].
+-> C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
+a Database (MySQL). "Pegasus" here is taken to be the name of a Test Program flying one's Sphere Of Consciousness 
+(SOC: the projection by helmet mount of a Human, known as Brain) based on Yoga Postures. Here are the STEPS of our 
+pseudocode for this program (plugin):
++ Prompt the User to set 23 [BEEPS + NOTIFICATIONS] from the Computer for BLUE Team AND 
+22 [BEEPS + NOTIFICATIONS] from the computer for GREEN Team.
++ Prompt the User to enter a Text Variable [BLUE Team member], an Associated Text Constant 
+[COMMENT about an activity that is CONSTANT in their schedule], AND a Time [SELECT Hour and Minutes from an AM/PM Digital 
+Clock]. 
+Minutes.
 ++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
-+ Prompt the user to enter a Text variable [GREEN Team member] AND an associated Text value [COMMENT about a Yoga Posture they will do].
++ Prompt the User to enter a Text Variable [GREEN Team member] AND an Associated Text Value
+ [COMMENT about a Yoga Posture they will perform].
 ++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
 + Once the foregoing SETUP is finished; 
+++ Each time one's WordPress-based TIME matches the Time entered alongside BLUE Team member (see above); 
+the Plugin SOUNDS 23 BEEPS and displays the BLUE Team member related Text Variable and Associated Text Constant. 
+++ Each time the User ENTERS a Word/Phrase/Initial in to a shell (interface) we will call "T_HUD"; the PIG (plugin) 
+sounds 22 BEEPS and reminds the User to do a Yoga Posture [both the (Text Variable) AND (Associated Text Value) for the GREEN Team member 
+is displayed via a pop-up to the User; perhaps using JavaScript.
+
+
 
 
 
