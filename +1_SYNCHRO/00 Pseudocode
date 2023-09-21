@@ -1,4 +1,5 @@
--> C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
+-> Pegaus Immersive Game pseudocode:
+C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
 a Database (MySQL). "Pegasus" here is taken to be the name of a Test Program flying one's Sphere Of Consciousness 
 (SOC: the projection by helmet mount of a Human, known as Brain) based on Yoga Postures. Here are the STEPS of our 
 pseudocode for this program (plugin):
@@ -17,7 +18,7 @@ Minutes.
 the Plugin SOUNDS 23 BEEPS and displays the BLUE Team member related Text Variable and Associated Text Constant. 
 ++ Each time the User ENTERS a Word/Phrase/Initial in to a shell (interface) we will call "T_HUD"; the PIG (plugin) 
 sounds 22 BEEPS and reminds the User to do a Yoga Posture [both the (Text Variable) AND (Associated Text Value) for the GREEN Team member 
-is displayed via a pop-up to the User; perhaps using JavaScript.
+is displayed via a pop-up to the User; perhaps using JavaScript. 
 
 
 
