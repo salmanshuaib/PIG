@@ -85,7 +85,6 @@ git config --global http.postBuffer 157286400
 /RE: error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1)/https://stackoverflow.com/questions/59282476/error-rpc-failed-curl-92-http-2-stream-0-was-not-closed-cleanly-protocol-erro
 
 -> DELETE folders sequentially: rmdir \*
--> git remote set-url origin "https://github.com/MIL7564/csaid.git" //Ty hobbs for this SNIPPET!\_
 
 ->// https://devconnected.com/how-to-clear-git-cache/
 git rm --cached file.conf
@@ -128,6 +127,9 @@ _git reset --hard main@{DATE}_
 -> https://scaron.info/blog/vim-keyboard-shortcuts.html
 -> https://www.cyberciti.biz/faq/linux-unix-vim-save-and-quit-command/#:~:text=To%20save%20a%20file%20in%20Vim%20%2F%20vi%2C%20press%20Esc%20key,x%20and%20hit%20Enter%20key
 -- _git commit --amend_ /press ENTER- then "i"/prior to push, edits Commit msg //Then press ESC and :w to SAVE //Then ESC and :x and ENTER to quit
+
+-> _git remote set-url origin_ "https://github.com/MIL7564/csaid.git" //RENAME A GitHub Repo after having changed 
+its name at GitHub.com AND changed the Folder Name.
 
 -> "Filename too long error: unable to index file"
 -- A workaround toward resolving this bug is to just rename the FOLDER enclosing the File* Make the FOLDER's name shorter*

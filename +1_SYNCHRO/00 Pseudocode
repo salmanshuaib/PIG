@@ -3,8 +3,9 @@ C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive
 a Database (MySQL). "Pegasus" here is taken to be the name of a Test Program flying one's Sphere Of Consciousness 
 (SOC: the projection by helmet mount of a Human, known as Brain) based on Yoga Postures. Here are the STEPS of our 
 pseudocode for this program (plugin):
-+ Prompt the User to set 23 [BEEPS + NOTIFICATIONS] from the Computer for BLUE Team AND 
-22 [BEEPS + NOTIFICATIONS] from the computer for GREEN Team.
++ Construct a MySQL DB named "xyz" with 9 Columns, titled: "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR".
++ Prompt the User to set 24 members for BLUE Team AND 
+23 members for GREEN Team as follows.
 + Prompt the User to enter a Text Variable [BLUE Team member], an Associated Text Constant 
 [COMMENT about an activity that is CONSTANT in their schedule], AND a Time [SELECT Hour and Minutes from an AM/PM Digital 
 Clock]. 
@@ -14,10 +15,10 @@ Minutes.
  [COMMENT about a Yoga Posture they will perform].
 ++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
 + Once the foregoing SETUP is finished; 
-++ Each time one's WordPress-based TIME matches the Time entered alongside BLUE Team member (see above); 
-the Plugin SOUNDS 23 BEEPS and displays the BLUE Team member related Text Variable and Associated Text Constant. 
-++ Each time the User ENTERS a Word/Phrase/Initial in to a shell (interface) we will call "T_HUD"; the PIG (plugin) 
-sounds 22 BEEPS and reminds the User to do a Yoga Posture [both the (Text Variable) AND (Associated Text Value) for the GREEN Team member 
+++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team member; 
+the Plugin SOUNDS 24 BEEPS and displays the BLUE Team member related Text Variable and Associated Text Constant. 
+++ Each time the User ENTERS a Word/Phrase/Initial in to an INTERFACE we will call "T_HUD"; PIG (plugin) 
+instructs User to do a Yoga Posture [both the (Text Variable) AND (Associated Text Value) for the GREEN Team member 
 is displayed via a pop-up to the User; perhaps using JavaScript. 
 
 
