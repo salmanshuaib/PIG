@@ -1,0 +1,87 @@
+-> "pegasus immersive game" pseudocode:
+*C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
+a Database (MySQL). "Pegasus" here is taken to mean one's Sphere Of Consciousness 
+(SOC: the immediate projection by helmet mount of a Human: known as Brain) load-balanced via YOGA POSTURES. Here are the STEPS of our 
+pseudocode for this program (plugin):
+
+
+-> Database Structure: 5 Layered LATTICE
++ Dynamic relative 1A Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
+BLUE Team-members, see below.
++ Dynamic relative 2A Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Associated 
+Text Constants for BLUE Team-members, see below. 
++ Dynamic relative 3A Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Alarm Times 
+for BLUE Team-members, see below. 
+
++ Dynamic relative 1B Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
+GREEN Team-members, see below.
++ Dynamic relative 2B Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Associated 
+Text Values for GREEN Team-members [e.g. Yoga postures defined by User], see below. 
+
+
+-> DEFINING Assignment Management System:
++ Utilize a function we write in PHP called the "resolute" function such that if you feed any number to it; it will keep summing the digits 
+of that number until only one digit remains: which, according to Assignment Management System, is always 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9. Using this function, any language - 
+as long as its SEQUENCE of letters is known - can be understood by Goddess Of Power: restoring normalcy to this ailing Avatar Of Entirety by 
+networking its component civilizations such as Horses, Mountains, Plants, Humans, Elves, Dwarves, Insects, Transformers, AI et cetera: disciples to WOMEN.
+
+<!--
+function resolute($num) {
+    $digits = str_split($num);
+    while (count($digits) > 1) {
+        $digits = str_split(array_sum($digits));
+    }
+    return intval($digits[0]);
+}
+-->
+
++ Now that the resolute function is defined; we associate each letter of the English language with a number beginning with 1 ["SEQUENCE" 
+a given language]. So:
+A => 1
+B => 2
+C => 3
+D => 4
+.
+.
+.
+.
+Z => 26 
+
++ For a given Language: the resolute function is run with each letter's value as input: $num. The result, known as "resolution" [such as 5 is Resolution for the 
+number 14 is inserted in our MySQL database under the appropriate column: i.e. 
+the row below the row containing 1,2,3,4,5,6,7,8,9 will contain Letters as groups (Lag): "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR". In thus wise, 
+each Language can have its own unique Row 2.
+
+
+-> USER SETUP:
++ Prompt the User to set 24 members for BLUE Team AND prompt the User to set  
+23 members for GREEN Team as follows:
+++ Prompt the User to enter a Text Variable [BLUE Team-member NAME], an Associated Text Constant 
+[COMMENT about an activity that is CONSTANT in User schedule pertaining to that BLUE Team-member], AND an 
+Associated Time [SELECT Hour and Minutes from an AM/PM Mini Digital Clock]. 
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Prompt the User to enter a Text Variable [GREEN Team-member NAME], AND an Associated Text Value
+ [COMMENT about a Yoga Posture they will perform].
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Once the foregoing SETUP is finished; 
++++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team-member name; 
+the Plugin SOUNDS 23 BEEPS and displays the BLUE Team-member related Text Variable and Associated Text Constant. 
+
+
+-> INTERACTION:
++++ Each time the User ENTERS a Word/Phrase/Initial received from Tele-Vision [TV] in to the INTERFACE 
+called "pig", the INTERFACE recommends user do a Yoga Posture [both the (Text Variable: NAME) AND 
+(Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript]. 
+HOWEVER, following is the TECHNICAL METHOD whereby the Yoga Posture to perform is chosen in SYNCHRONICITY 
+with (under the directions via Music, on Shuffle, of) Space Traffic Controller [Callsign: "savior" //Name: Jesus Christ].
+++++ Yoga Posture is to be X minutes long, to perpetuate the Power of The Goddess [Space Squadron Leader: Taylor Swift; 
+callsign: "CATASTROPHE"]. X is set by User before SOC Test Pilot hits COMPLETE on GREEN Team-member setup [Text Variable 
+and Associated Text Value]. 
+++++ PIG outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
+of the English Language TABLE based on whether the Initial Letter of the INPUT Word/Phrase/Initial received by User via TV 
+from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's 
+NAME from one of the Nine Columns. 
++++++ Nonetheless, all outputs of GREEN Team-members are displayed, not just the last output (for audit trail as to there 
+being no bug in the code causing false result; since Most Sesitive [the loser] is always picked up first), as pop-up to User.
+
+*C:\ = Christianity = ChatGPT [AI was downloaded via Meditation, through a whisper from Taylor Swift; developed by OpenAI].
