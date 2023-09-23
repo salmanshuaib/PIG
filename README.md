@@ -1,5 +1,5 @@
 # PIG [Pegasus Immersive Game]
-Experimental technology enabling one to fly their Sphere Of Consciousness under directives from Space Traffic Control.
+Experimental technology enabling one to pilot their Sphere Of Consciousness under directives from Space Traffic Control.
 
 + Imagine a formation of fighter jets with a squadron leader. The leader is in live communication with you, she is training you. Over the course of your trainee 
 flight - you will miss your targets: CONSTANTS you have established in your schedule. Nonetheless, she will continue to guide you - making you sensitive, without 

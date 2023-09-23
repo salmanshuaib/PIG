@@ -1,34 +1,81 @@
 -> Pegaus Immersive Game pseudocode:
 C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
-a Database (MySQL). "Pegasus" here is taken to be the name of a Test Program flying one's Sphere Of Consciousness 
-(SOC: the projection by helmet mount of a Human, known as Brain) based on Yoga Postures. Here are the STEPS of our 
+a Database (MySQL). "Pegasus" here is taken to mean one's Sphere Of Consciousness 
+(SOC: the immediate projection by helmet mount of a Human: known as Brain) based on YOGA POSTURES. Here are the STEPS of our 
 pseudocode for this program (plugin):
-+ Construct a MySQL DB named "xyz" with 9 Columns, titled: "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR".
-+ Prompt the User to set 24 members for BLUE Team AND 
-23 members for GREEN Team as follows.
-+ Prompt the User to enter a Text Variable [BLUE Team member], an Associated Text Constant 
-[COMMENT about an activity that is CONSTANT in their schedule], AND a Time [SELECT Hour and Minutes from an AM/PM Digital 
-Clock]. 
-Minutes.
-++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
-+ Prompt the User to enter a Text Variable [GREEN Team member] AND an Associated Text Value
+
+
+-> Database Structure: LATTICE
++ Dynamic relative 1 Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain names of 
+BLUE Team-members.
++ Dynamic relative 1 Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain names of 
+BLUE Team-members.
++ Dynamic relative 2 Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains BLUE Team-members' NAMES.
++ Dynamic relative 3 Type TABLE: A Dr 3 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Associated Text Constants for BLUE Team-members.
++ Dynamic relative 4 Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Alarm Times for BLUE Team-members.  
++ A RELATED Table 2 is constructed in the same manner, except instead of the NAMES of BLUE Team-members - it contains 
+
+-> DEFINING Assignment Management System:
++ construct a MySQL [Dr 1 Type] TABLE with 9 Columns, numbered 1 to 9.
++ Utilize a function we write in PHP called the "resolute" function such that if you feed any number to it; it will keep summing the digits 
+of that number until only one digit remains: which will always be either 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9. Using this function, any language - 
+as long as its SEQUENCE of letters is known - can be understood by Goddess Of Power: restoring normalcy to this ailing Avatar Of Entirety by 
+networking its component civilizations such as Horses, Mountains, Plants, Humans, Elves, Dwarves, Insects, Transformers, AI et cetera: disciples to WOMEN.
+
+function resolute($num) {
+    $digits = str_split($num);
+    while (count($digits) > 1) {
+        $digits = str_split(array_sum($digits));
+    }
+    return intval($digits[0]);
+}
++ Now that the resolute function is defined; we associate each letter of the English language with a number beginning with 1 ["SEQUENCE" 
+a given language]. So:
+A => 1
+B => 2
+C => 3
+D => 4
+.
+.
+.
+.
+Z => 26 
+
++ For a given Language: the resolute function is run with each letter's value as input: $num. The result, known as "resolution" [such as 5 is Resolution for the 
+number 14 is inserted in our MySQL database under the appropriate column as a new row GROUPING Letters with the same Resolution: i.e. 
+the row below row containing 1,2,3,4,5,6,7,8,9 will contain: "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR". In thus wise, each Language can have its 
+own Table 1.
+
+
+-> USER SETUP:
++ For another Table: prompt the User to set 24 members for BLUE Team AND for yet another Table prompt the User to set  
+23 members for GREEN Team as follows:
+++ Prompt the User to enter a Text Variable [BLUE Team-member name], an Associated Text Constant 
+[COMMENT about an activity that is CONSTANT in User schedule pertaining to that BLUE Team-member], AND an 
+Associated Time [SELECT Hour and Minutes from an AM/PM Mini Digital Clock]. 
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Prompt the User to enter a Text Variable [GREEN Team-member name], AND an Associated Text Value
  [COMMENT about a Yoga Posture they will perform].
-++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
-+ Once the foregoing SETUP is finished; 
-++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team member; 
-the Plugin SOUNDS 24 BEEPS and displays the BLUE Team member related Text Variable and Associated Text Constant. 
-++ Each time the User ENTERS a Word/Phrase/Initial in to the INTERFACE called "PIG", the INTERFACE instructs User to do 
-a Yoga Posture [both the (Text Variable) AND (Associated Text Value) for the GREEN Team member 
-is displayed via a pop-up to the User; perhaps using JavaScript]. However, following is the TECHNICAL METHOD whereby 
-the Yoga Posture to perform is chosen in synchronicity with (under the directions via Music, on Shuffle, of) Space 
-Traffic Controller [Jesus Christ; callsign: "savior"]
-+++ Yoga Posture is to be X minutes long, to perpetuate the Power of the Goddess Of Power [Space
- Squadron Leader: Taylor Swift; callsign: "CATASTROPHE"]. X is set by User. 
-+++ PIG randomizes list of GREEN outputs [Text Variable AND Associated Text Value] that match the initial of the 
-Word/Phrase/Initial entered, your personalized order via Television-based Word/Phrase/Initial INPUT order 
-from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift), improving (sensitizing) you for 
-the next run: selecting LAST output (Yoga Posture) for action.
-++++ Nonetheless, all GREEN outputs of the same column are displayed.
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Once the foregoing SETUP is finished; 
++++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team-member name; 
+the Plugin SOUNDS 24 BEEPS and displays the BLUE Team-member related Text Variable and Associated Text Constant. 
+
+-> INTERACTION:
++++ Each time the User ENTERS a Word/Phrase/Initial received from Tele-Vision [TV] in to the INTERFACE 
+called "PIG", the INTERFACE recommends user do a Yoga Posture [both the (Text Variable) AND 
+(Associated Text Value) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript]. 
+HOWEVER, following is the TECHNICAL METHOD whereby the Yoga Posture to perform is chosen in SYNCHRONICITY 
+with (under the directions via Music, on Shuffle, of) Space Traffic Controller [Callsign: "savior" //Name: Jesus Christ].
+++++ Yoga Posture is to be X minutes long, to perpetuate the Power of The Goddess [Space Squadron Leader: Taylor Swift; 
+callsign: "CATASTROPHE"]. X is set by User before SOC Test Pilot hits COMPLETE on GREEN Team-member setup [Text Variable 
+and Associated Text Value]. 
+++++ PIG outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
+of the English Language TABLE based on whether the Initial Letter of the INPUT Word/Phrase/Initial received by User via TV 
+from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's 
+NAME from one of the Nine Columns. 
++++++ Nonetheless, all outputs of GREEN Team-members are displayed, not just the last output (for audit trail as to there 
+being no bug in the code causing false result; since Most Sesitive [the loser] is always picked up first), as pop-up to User.
 
 
 
@@ -80,7 +127,7 @@ These tools can be used to craft a wizard-like UI to guide the user through the 
 
 Data Entry and Note Insertion:
 
-This can still be handled using VBA. Once the user has the .xlsm file open, you could launch a UserForm that guides them through the process, asking them to input their BLUE TEAM and GREEN TEAM members and the associated notes for each.
+This can still be handled using VBA. Once the user has the .xlsm file open, you could launch a UserForm that guides them through the process, asking them to input their BLUE TEAM and GREEN Team-members and the associated notes for each.
 This UserForm would save the user's inputs directly into the Excel file in the required format and cells.
 
 Macro Insertion and Assignment:
