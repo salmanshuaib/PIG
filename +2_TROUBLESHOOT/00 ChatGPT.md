@@ -1,4 +1,96 @@
-- WE ARE BUILDING A PLUGIN CALLED pig FOR RUNNING ON WordPress. THE REQUIREMENTS INCLUDE: INITIALIZING THE DATABASE 
+- ChatGPT replies:
+To achieve your requirements for initializing the database with 5 tables and using the `ams` function to map letters to numbers, you can follow these steps in your WordPress plugin code. We will use PHP for this purpose.
+
+1. Create a function to initialize the database tables upon plugin activation:
+
+```php
+function pig_activate() {
+    global $wpdb;
+
+    $table1A = $wpdb->prefix . 'table_1A';
+    $table2A = $wpdb->prefix . 'table_2A';
+    $table3A = $wpdb->prefix . 'table_3A';
+    $table1B = $wpdb->prefix . 'table_1B';
+    $table2B = $wpdb->prefix . 'table_2B';
+
+    $charset_collate = $wpdb->get_charset_collate();
+
+    // SQL queries to create the tables
+    $sql1A = "CREATE TABLE $table1A (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2A = "CREATE TABLE $table2A (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql3A = "CREATE TABLE $table3A (
+        id INT NOT NULL AUTO_INCREMENT,
+        alarm_time VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql1B = "CREATE TABLE $table1B (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2B = "CREATE TABLE $table2B (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+
+    dbDelta($sql1A);
+    dbDelta($sql2A);
+    dbDelta($sql3A);
+    dbDelta($sql1B);
+    dbDelta($sql2B);
+}
+
+register_activation_hook(__FILE__, 'pig_activate');
+```
+
+2. Modify the `mapLetterToNumber` function to use the `ams` function for letter mapping:
+
+```php
+function mapLetterToNumber($letter) {
+    // Define the letter groupings
+    $groups = [
+        'AJS' => 1,
+        'BKT' => 2,
+        'CLU' => 3,
+        'DMV' => 4,
+        // Add other groupings as needed
+    ];
+
+    $letter = strtoupper($letter);
+
+    // Find the corresponding group using the letter
+    foreach ($groups as $lettersInGroup => $groupNumber) {
+        if (strpos($lettersInGroup, $letter) !== false) {
+            return ams($groupNumber); // Use the ams function to map the group number
+        }
+    }
+
+    return 0; // Not a valid letter
+}
+```
+
+Now, when your plugin is activated, it will create the required database tables. The `mapLetterToNumber` function has been modified to map letters to the group numbers using the `ams` function. You can add more groupings to the `$groups` array as needed.
+
+
+
+- Salman Asks:
+
+WE ARE BUILDING A PLUGIN CALLED pig FOR RUNNING ON WordPress. THE REQUIREMENTS INCLUDE: INITIALIZING THE DATABASE 
 WITH 5 TABLES VIA A MySQL QUERY THAT IS RUN UPON "ACTIVATION" OF THE pig PLUGIN.  
 
 -> Database Structure: 5 Layered Aligning Lattice [AL]:-
