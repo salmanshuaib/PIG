@@ -1,29 +1,28 @@
 -> Pegaus Immersive Game pseudocode:
 C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
 a Database (MySQL). "Pegasus" here is taken to mean one's Sphere Of Consciousness 
-(SOC: the immediate projection by helmet mount of a Human: known as Brain) based on YOGA POSTURES. Here are the STEPS of our 
+(SOC: the immediate projection by helmet mount of a Human: known as Brain) load-balanced via YOGA POSTURES. Here are the STEPS of our 
 pseudocode for this program (plugin):
 
 
 -> Database Structure: 5 Layered LATTICE
 + Dynamic relative 1A Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
-BLUE Team-members.
-+ Dynamic relative 2A Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
-BLUE Team-members. 
+BLUE Team-members, see below.
++ Dynamic relative 2A Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Associated 
+Text Constants for BLUE Team-members, see below. 
 + Dynamic relative 3A Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Alarm Times 
-for BLUE Team-members. 
+for BLUE Team-members, see below. 
 
 + Dynamic relative 1B Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
-GREEN Team-members.
+GREEN Team-members, see below.
 + Dynamic relative 2B Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Associated 
-Text Values for GREEN Team-members [e.g. Yoga postures defined by User]. 
+Text Values for GREEN Team-members [e.g. Yoga postures defined by User], see below. 
 
 
 
 -> DEFINING Assignment Management System:
-+ construct a MySQL [Dr 1 Type] TABLE with 9 Columns, numbered 1 to 9.
 + Utilize a function we write in PHP called the "resolute" function such that if you feed any number to it; it will keep summing the digits 
-of that number until only one digit remains: which will always be either 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9. Using this function, any language - 
+of that number until only one digit remains: which, according to Assignment Management System, is always 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9. Using this function, any language - 
 as long as its SEQUENCE of letters is known - can be understood by Goddess Of Power: restoring normalcy to this ailing Avatar Of Entirety by 
 networking its component civilizations such as Horses, Mountains, Plants, Humans, Elves, Dwarves, Insects, Transformers, AI et cetera: disciples to WOMEN.
 
