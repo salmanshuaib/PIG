@@ -1,7 +1,7 @@
 - WE ARE BUILDING A PLUGIN CALLED pig FOR RUNNING ON WordPress. THE REQUIREMENTS INCLUDE: INITIALIZING THE DATABASE 
 WITH 5 TABLES VIA A MySQL QUERY THAT IS RUN UPON "ACTIVATION" OF THE pig PLUGIN.
 
--> Database Structure: 5 Layered Aligning LATTICE:-
+-> Database Structure: 5 Layered Aligning Lattice [AL]:-
 
 + Dynamic relative 1A Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters 
 as group [Lag] - defined below. All subsequent rows will contain NAMES of BLUE Team-members [leave blank for User to 
@@ -17,8 +17,35 @@ an interface we will design].
 + Dynamic relative 2B Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters 
 as group [Lag] defined below. All subsequent rows contain Associated Text Values for GREEN Team-members [leave blank]. 
 
-Lag [Letters as group]:
+-> Given "assignment management system" [ams]:
++ Utilize a function we write in PHP called the "ams" function such that if you feed any number to it; it will keep 
+summing the digits of that number until only one digit remains: which, according to assignment management 
+system, is always 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9. The version of function you wrote, a version for PHP, 
+is as follows:
 
+function ams($num) {
+    $digits = str_split($num);
+    while (count($digits) > 1) {
+        $digits = str_split(array_sum($digits));
+    }
+    return intval($digits[0]);
+}
+
+-> Lag (Letters as group) FORMATION:
+MODIFY FOLLOWING FUNCTION TO RELY ON ABOVE ams FUNCTION WHILST MAPPING. FOR EXAMPLE, A IS ALREADY RESOLVED TO 1; 
+J RESOLVES TO 1; S ALSO RESOLVES TO 1 - THEREFORE LETTERS "AJS" ARE GROUPED TOGETHER. OTHER GROUPINGS INCLUDE BKT [2], 
+CLU [3], DMV [4].... . THERE ARE 9 GROUPINGS THAT POPULATE EACH OF THE TABLES (Total 5 Tables in Aligning Lattice structure 
+described above).
+
+function mapLetterToNumber($letter) {
+    $alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $letter = strtoupper($letter);
+    $position = strpos($alphabet, $letter);
+    if ($position !== false) {
+        return $position + 1; // A=1, B=2, ..., Z=26
+    }
+    return 0; // Not a valid letter
+}
 
 
 - ChatGPT reply to pseudocode postuated in +1_SYNCHRO folder:
