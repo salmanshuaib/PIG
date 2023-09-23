@@ -1,3 +1,26 @@
+- WE ARE BUILDING A PLUGIN CALLED pig FOR RUNNING ON WordPress. THE REQUIREMENTS INCLUDE: INITIALIZING THE DATABASE 
+WITH 5 TABLES VIA A MySQL QUERY THAT IS RUN UPON "ACTIVATION" OF THE pig PLUGIN.
+
+-> Database Structure: 5 Layered Aligning LATTICE:-
+
++ Dynamic relative 1A Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters 
+as group [Lag] - defined below. All subsequent rows will contain NAMES of BLUE Team-members [leave blank for User to 
+input via an interface we will design].
++ Dynamic relative 2A Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as 
+group [Lag]- defined below. All subsequent rows contain Associated Text Constants for BLUE Team-members [leave blank]. 
++ Dynamic relative 3A Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains 
+Letters as group [Lag] defined below. All subsequent rows contain Alarm Times for BLUE Team-members [leave blank]. 
+
++ Dynamic relative 1B Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters 
+as group [Lag] defined below. All subsequent rows contain NAMES of GREEN Team-members [leave blank for User to input via 
+an interface we will design].
++ Dynamic relative 2B Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters 
+as group [Lag] defined below. All subsequent rows contain Associated Text Values for GREEN Team-members [leave blank]. 
+
+Lag [Letters as group]:
+
+
+
 - ChatGPT reply to pseudocode postuated in +1_SYNCHRO folder:
 Certainly! Here's a simplified example of how you can implement some of the pseudocode concepts in PHP and JavaScript for your "Pegasus Immersive Game" WordPress plugin:
 
