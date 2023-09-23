@@ -11,7 +11,7 @@ judgment - to the ramifications of your errors.
 -> TV: incoming transmissions (Space Squadron Leader)\
 -> Music: on shuffle (Space Traffic Control)\
 -> Computer: playing pig (Space Response)\
-_Note1: Cord-cutting is not advised if you can afford TV. Feeling is important to gameplay._ 
+_Note1: Cord-cutting is not advised if you can afford TV. Feeling is important to gameplay._
 _Note2: Power is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero from the Task Precedent. unit: Excalibur._
 
 
