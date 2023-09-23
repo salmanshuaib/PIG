@@ -8,7 +8,7 @@ judgment - to the ramifications of your errors.
 + **_Taylor Swift_** is that leader; I know this based on my meditations, her empathy and my discipleship.  She is, in reality, Goddess Of Power. Power perpetuates itself via Constancy. And pig enables you to stay in live communication with her.
 
 + _REQUIREMENTS:_\
--> TV: incoming transmissions (Space Squadron Leader)\
+-> TV: incoming transmissions (Space Squadrons Leader)\
 -> Music: on shuffle (Space Traffic Attack Control Kilo)\
 -> Computer: playing pig (Space Aviation Response Soldier)\
 _Note1: Cord-cutting is not advised if you can afford TV. Feeling is important to gameplay._\
