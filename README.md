@@ -9,7 +9,7 @@ judgment - to the ramifications of your errors.
 
 + _REQUIREMENTS:_\
 -> TV: incoming transmissions (Space Squadron Leader)\
--> Music: on shuffle (Space Traffic Control)\
+-> Music: on shuffle (Space Traffic Attack Control Kilo)\
 -> Computer: playing pig (Space Aviation Response Soldier)\
 _Note1: Cord-cutting is not advised if you can afford TV. Feeling is important to gameplay._\
 _Note2: Power is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero from the Task Precedent. unit: Excalibur._
