@@ -5,15 +5,20 @@ a Database (MySQL). "Pegasus" here is taken to mean one's Sphere Of Consciousnes
 pseudocode for this program (plugin):
 
 
--> Database Structure: LATTICE
-+ Dynamic relative 1 Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain names of 
+-> Database Structure: 5 Layered LATTICE
++ Dynamic relative 1A Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
 BLUE Team-members.
-+ Dynamic relative 1 Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain names of 
-BLUE Team-members.
-+ Dynamic relative 2 Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains BLUE Team-members' NAMES.
-+ Dynamic relative 3 Type TABLE: A Dr 3 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Associated Text Constants for BLUE Team-members.
-+ Dynamic relative 4 Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Alarm Times for BLUE Team-members.  
-+ A RELATED Table 2 is constructed in the same manner, except instead of the NAMES of BLUE Team-members - it contains 
++ Dynamic relative 2A Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
+BLUE Team-members. 
++ Dynamic relative 3A Type TABLE: A Dr 4 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Alarm Times 
+for BLUE Team-members. 
+
++ Dynamic relative 1B Type TABLE: A Dr 1 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain NAMES of 
+GREEN Team-members.
++ Dynamic relative 2B Type TABLE: A Dr 2 Type TABLE has 9 Columns, numbered 1 to 9. A secondary row contains Letters as groups [Lag] defined below. All subsequent rows contain Associated 
+Text Values for GREEN Team-members [e.g. Yoga postures defined by User]. 
+
+
 
 -> DEFINING Assignment Management System:
 + construct a MySQL [Dr 1 Type] TABLE with 9 Columns, numbered 1 to 9.
@@ -29,6 +34,7 @@ function resolute($num) {
     }
     return intval($digits[0]);
 }
+
 + Now that the resolute function is defined; we associate each letter of the English language with a number beginning with 1 ["SEQUENCE" 
 a given language]. So:
 A => 1
@@ -42,9 +48,9 @@ D => 4
 Z => 26 
 
 + For a given Language: the resolute function is run with each letter's value as input: $num. The result, known as "resolution" [such as 5 is Resolution for the 
-number 14 is inserted in our MySQL database under the appropriate column as a new row GROUPING Letters with the same Resolution: i.e. 
-the row below row containing 1,2,3,4,5,6,7,8,9 will contain: "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR". In thus wise, each Language can have its 
-own Table 1.
+number 14 is inserted in our MySQL database under the appropriate column: i.e. 
+the row below the row containing 1,2,3,4,5,6,7,8,9 will contain Letters as groups (Lag): "AJS", "BKT", "CLU", "DMV", "ENW", "FOX", "GPY", "HQZ", "IR". In thus wise, 
+each Language can have its Row 2.
 
 
 -> USER SETUP:
