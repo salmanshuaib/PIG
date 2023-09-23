@@ -1,4 +1,4 @@
-# PIG [Pegasus Immersive Game]
+# pig [pegasus immersive game]
 Experimental technology enabling one to pilot their Sphere Of Consciousness under directives from Space Traffic Control.
 
 + Imagine a formation of fighter jets with a squadron leader. The leader is in live communication with you, she is training you. Over the course of your trainee 
