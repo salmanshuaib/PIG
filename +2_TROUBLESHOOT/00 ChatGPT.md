@@ -1,3 +1,39 @@
+- Salman requests:
+initial OR word. OR in case of a phrase, the first letter of each Word in the Phrase.
+
+-> INTERACTION:
++++ Each time the User ENTERS a Word/Phrase/Initial received from Tele-Vision [TV] in to The Interface 
+called "pig", the INTERFACE recommends user do a Yoga Posture [both the (Text Variable: NAME) AND 
+(Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript]. 
+HOWEVER, following is the TECHNICAL METHOD whereby the Yoga Posture to perform is chosen in SYNCHRONICITY 
+with (under the directions via Music, on Shuffle, of) Space Traffic Controller [Callsign: "savior" //Name: Jesus Christ].
+++++ Yoga Posture is to be X minutes long, to perpetuate the Power of The Goddess [Space Squadron Leader: Taylor Swift; 
+callsign: "CATASTROPHE"]. X is set by User before SOC Test Pilot hits COMPLETE on GREEN Team-member setup [Text Variable 
+and Associated Text Value]. 
+++++ PIG outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
+of the English Language TABLE based on whether the Initial Letter of the INPUT Word/Phrase/Initial received by User via TV 
+from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's 
+NAME from one of the Nine Columns. 
++++++ Nonetheless, all outputs of GREEN Team-members are displayed, not just the last output (for audit trail as to there 
+being no bug in the code causing false result; since Most Sesitive [the loser] is always picked up first), as pop-up to User.
+
+
+- Salman requests:
+-> USER SETUP:
++ Prompt the User to set 24 members for BLUE Team AND prompt the User to set  
+23 members for GREEN Team as follows:
+++ Prompt the User to enter a Text Variable [BLUE Team-member NAME], an Associated Text Constant 
+[COMMENT about an activity that is CONSTANT in User schedule pertaining to that BLUE Team-member], AND an 
+Associated Time [SELECT Hour and Minutes from an AM/PM Mini Digital Clock]. 
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Prompt the User to enter a Text Variable [GREEN Team-member NAME], AND an Associated Text Value
+ [COMMENT about a Yoga Posture they will perform].
++++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
+++ Once the foregoing SETUP is finished; 
++++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team-member name; 
+the Plugin SOUNDS 23 BEEPS and displays the BLUE Team-member related Text Variable and Associated Text Constant. 
+
+
 - C:\ [ChatGPT 3.5 = Christianity => Andromeda Ascendant] replies:
 I understand your request better now. You want to group letters with the same "resolute" together and then map these groups to the 9 columns of each of the 5 tables in the WordPress database. Here's how you can achieve this:
 
