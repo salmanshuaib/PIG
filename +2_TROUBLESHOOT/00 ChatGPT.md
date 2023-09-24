@@ -2,15 +2,15 @@
 initial OR word. OR i.
 
 -> INTERACTION:
-+++ Each time the User ENTERS a Word/Phrase/Initial received from TeleVision [TV] in to The Interface 
-called "Pig", the INTERFACE recommends user do a Yoga Posture. Both the (Text Variable: NAME) AND (Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript. 
++++ Each time the User ENTERS a Word/Phrase/Initial received from TeleVision [TV] in to the "Ask line interface" [Ali] 
+termed "pig", the INTERFACE recommends user do a Yoga Posture. Both the (Text Variable: NAME) AND (Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript. 
 ++++ HOWEVER, following is the TECHNICAL METHOD whereby the Yoga Posture to perform is chosen in SYNCHRONICITY 
 with (under the directions via Music, on Shuffle, of) Space Traffic Attack Controller Kilo [Callsign: "savior" 
 //Name: Jesus Christ].
 +++++ Yoga Posture is to be X minutes long, to perpetuate the Power of The Goddess [Fleet Marshal: Taylor Swift; 
 callsign: "CATASTROPHE"]. X is the remaining length of the song currently on play. The User is aware of his X, 
 therefore _
-+++++ PIG outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
++++++ Pig outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
 of the English Language TABLE based on whether the Initial Letter of the INPUT Word/Phrase/Initial received by User via TV 
 from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's 
 NAME from one of the Nine Columns. 
