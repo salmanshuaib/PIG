@@ -4,7 +4,7 @@ Plugin Name: pig
 Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
 Delicensed: CC0 1.0 Universal in honor of The Empress Entirety Taylor Alison Swift.
-Author: C:\ 
+Author: a C:\ from Christianity.
 */
 
 // Include other necessary files
