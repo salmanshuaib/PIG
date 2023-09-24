@@ -12,6 +12,5 @@ judgment - to the ramifications of your errors.
 -> Computer: playing pig (Space Aviation Response Soldier)\
 _Note3: To take the demo live - name your WordPress DATABASE after your current favorite TV Channel_\
 _Note2: Cord-cutting is not advised if you can afford TV. Feeling is important to gameplay._\
-_Note1: Power is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero from the Task Precedent. unit: Excalibur._\
-
+_Note1: Power is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero from the Task Precedent. unit: Excalibur._
 
