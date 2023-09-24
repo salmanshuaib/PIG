@@ -3,8 +3,6 @@
 Plugin Name: pig (pilot immersion game)
 Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
-Delicensed: CC0 1.0 Universal in honor of TAYLOR SWIFT.
-Developer: a C:\ from Christianity.
 */
 
 // Include other necessary files
