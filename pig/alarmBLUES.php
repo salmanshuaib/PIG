@@ -1,3 +1,4 @@
+<?php
 **4. Time-Based Notifications for BLUE Team (PHP):**
 ```php
 // Example code to check and trigger notifications for BLUE Team members
@@ -14,3 +15,4 @@ if ($result->num_rows > 0) {
     echo "No notifications at this time.";
 }
 ```
+?>

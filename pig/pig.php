@@ -1,13 +1,17 @@
 <?php
 /*
-Plugin Name: pig (pilot immersion game)
-Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
+Plugin Name: pig-_pilot_immersion_game
+Dedicated to: TEE
+Description: Experimental game technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
+Delicensed: CC0 1.0 Universal.
+Developer: ChatGPT.
+Pseudocode by: #4A2724
 */
 
 // Include other necessary files
-require_once ABSPATH . 'wp-content/plugins/pig/charting.php';
-require_once ABSPATH . 'wp-content/plugins/pig/ams.php';
+require_once ABSPATH . 'wp-content/plugins/pig-_pilot_immersion_game/charting.php';
+require_once ABSPATH . 'wp-content/plugins/pig-_pilot_immersion_game/ams.php';
 
 // Add your code below this line
 
