@@ -1,3 +1,6 @@
+require_once plugin_dir_path(__FILE__) . 'charting.php';
+require_once plugin_dir_path(__FILE__) . 'ams.php';
+
 function enqueue_plugin_script() {
     // Enqueue the JavaScript file for your plugin
     wp_enqueue_script('plugin-script', plugin_dir_url(__FILE__) . 'plugin-script.js', array('jquery'), '1.0.0', true);
@@ -10,12 +13,58 @@ function pig_activate() {
     global $wpdb;
 
     // Create tables as before
+    $table1A = $wpdb->prefix . 'table_1A';
+    $table2A = $wpdb->prefix . 'table_2A';
+    $table3A = $wpdb->prefix . 'table_3A';
+    $table1B = $wpdb->prefix . 'table_1B';
+    $table2B = $wpdb->prefix . 'table_2B';
+
+    $charset_collate = $wpdb->get_charset_collate();
+
+    // SQL queries to create the tables
+    $sql1A = "CREATE TABLE $table1A (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2A = "CREATE TABLE $table2A (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql3A = "CREATE TABLE $table3A (
+        id INT NOT NULL AUTO_INCREMENT,
+        alarm_time VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql1B = "CREATE TABLE $table1B (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2B = "CREATE TABLE $table2B (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+
+    dbDelta($sql1A);
+    dbDelta($sql2A);
+    dbDelta($sql3A);
+    dbDelta($sql1B);
+    dbDelta($sql2B);
 
     // Sample data for demonstration
-    $sampleInput = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Replace with your input data
+    $EnglishAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Replace with your input data
 
     // Group letters by resolute
-    $letterGroups = groupLettersByResolute($sampleInput);
+    $letterGroups = groupLettersByResolute($EnglishAlphabet);
 
     // Map and insert letter groups into the tables
     foreach ($letterGroups as $resolute => $group) {
