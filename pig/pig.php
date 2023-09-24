@@ -1,5 +1,16 @@
+<?php
+/*
+Plugin Name: pig
+Description: Your plugin description here.
+Version: 1.0
+Delicensed: CC0 1.0 Universal in honor of The Empress Entirety Taylor Alison Swift.
+*/
+
+// Include other necessary files
 require_once plugin_dir_path(__FILE__) . 'charting.php';
 require_once plugin_dir_path(__FILE__) . 'ams.php';
+
+// Add your code below this line
 
 function enqueue_plugin_script() {
     // Enqueue the JavaScript file for your plugin
@@ -7,7 +18,6 @@ function enqueue_plugin_script() {
 }
 
 add_action('admin_enqueue_scripts', 'enqueue_plugin_script');
-
 
 function pig_activate() {
     global $wpdb;
