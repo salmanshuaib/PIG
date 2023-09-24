@@ -2,7 +2,7 @@
 digit left - it will always be one of the following digits: 1, 2, 3, 4, 5, 6, 7, 8 OR 9.  
 */
 
- function ams($num) {
+ function groupLettersByResolute($num) {
     $digits = str_split($num);
     while (count($digits) > 1) {
         $digits = str_split(array_sum($digits));
