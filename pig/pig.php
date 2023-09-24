@@ -1,10 +1,18 @@
+function enqueue_plugin_script() {
+    // Enqueue the JavaScript file for your plugin
+    wp_enqueue_script('plugin-script', plugin_dir_url(__FILE__) . 'plugin-script.js', array('jquery'), '1.0.0', true);
+}
+
+add_action('admin_enqueue_scripts', 'enqueue_plugin_script');
+
+
 function pig_activate() {
     global $wpdb;
 
     // Create tables as before
 
     // Sample data for demonstration
-    $sampleInput = "ABCDEFGH"; // Replace with your input data
+    $sampleInput = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Replace with your input data
 
     // Group letters by resolute
     $letterGroups = groupLettersByResolute($sampleInput);

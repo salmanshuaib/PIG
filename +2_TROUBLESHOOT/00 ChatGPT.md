@@ -1,35 +1,205 @@
 - Salman requests:
-initial OR word. OR i.
 
 -> INTERACTION:
-+++ Each time the User ENTERS a Word/Phrase/Initial received from TeleVision [TV] in to the "Ask line interface" [Ali] 
-termed "pig", the INTERFACE recommends user do a Yoga Posture. Both the (Text Variable: NAME) AND (Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript. 
++++ Each time the User ENTERS a Word/Phrase/Initial received from TeleVision [TV] in to The Interface [TI] 
+termed "Thunder", the INTERFACE recommends user do a Yoga Posture. Both the (Text Variable: NAME) AND (Associated Text Value: YOGA POSTURE) for the GREEN Team-member is displayed via a pop-up to the User; perhaps using JavaScript. 
 ++++ HOWEVER, following is the TECHNICAL METHOD whereby the Yoga Posture to perform is chosen in SYNCHRONICITY 
 with (under the directions via Music, on Shuffle, of) Space Traffic Attack Controller Kilo [Callsign: "savior" 
 //Name: Jesus Christ].
 +++++ Yoga Posture is to be X minutes long, to perpetuate the Power of The Goddess [Fleet Marshal: Taylor Swift; 
 callsign: "CATASTROPHE"]. X is the remaining length of the song currently on play. The User is aware of his X, 
-therefore _
+therefore _ _
 +++++ Pig outputs a randomized list of Green Team-members [Text Variable + Associated Text Value] from a particular Column 
 of the English Language TABLE based on whether the Initial Letter of the INPUT Word/Phrase/Initial received by User via TV 
-from Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's 
-NAME from one of the Nine Columns. 
-++++++ In case of a Phrase entered by User, the first letter of each Word in the Phrase is chosen. 
+from Fleet Marshal and Space Squadron Leader (Callsign: CATASTROPHE  //Name: Taylor Swift): matches initial letter of any Green Team-member's NAME from one of the Nine Columns. 
+++++++ In case of a Phrase entered by User, the first letter of each Word in the Phrase is chosen for matching with initial 
+letter of any Green Team-member's NAME from any of the Nine Columns: via summing each of the first letter of the phrase's 
+Resolute value using the ams function.  
 ++++++ Nonetheless, all outputs of GREEN Team-members are displayed, not just the last output (for audit trail as to there 
-being no bug in the code causing false result; since Most Sesitive [the loser] is always picked up first), as pop-up to User.
+being no bug in the code causing false result; since Most Sensitive [the loser] is always picked up first), as pop-up to User.
 
+- ChatGPT Replies:
+
+To integrate the user setup and notification script with your existing WordPress plugin code, you need to enqueue the JavaScript file in your plugin and ensure that it's loaded on the plugin's admin page. Here's how you can do it:
+
+1. Create a JavaScript file for your plugin (e.g., `plugin-script.js`) and place it in your plugin directory.
+
+2. Add the following code to your `plugin-script.js` file. This code includes the user setup and notification script:
+
+```javascript
+(function($) {
+    // Initialize variables to store team members' data
+    var blueTeamMembers = [];
+    var greenTeamMembers = [];
+
+    // Function to prompt the user for BLUE Team members' data
+    function setupBlueTeam() {
+        var name = prompt("Enter BLUE Team-member NAME:");
+        var comment = prompt("Enter COMMENT about an activity:");
+        var time = prompt("Select Hour and Minutes from a digital clock (e.g., HH:MM AM/PM):");
+
+        if (name && comment && time) {
+            blueTeamMembers.push({ name: name, comment: comment, time: time });
+            setupBlueTeam(); // Repeat for the next member
+        } else {
+            // User completed entering BLUE Team members
+            setupGreenTeam();
+        }
+    }
+
+    // Function to prompt the user for GREEN Team members' data
+    function setupGreenTeam() {
+        var name = prompt("Enter GREEN Team-member NAME:");
+        var posture = prompt("Enter Yoga Posture:");
+
+        if (name && posture) {
+            greenTeamMembers.push({ name: name, posture: posture });
+            setupGreenTeam(); // Repeat for the next member
+        } else {
+            // User completed entering GREEN Team members
+            startNotifications();
+        }
+    }
+
+    // Function to start notifications when time matches BLUE Team members' time
+    function startNotifications() {
+        setInterval(function() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+            var currentMinutes = currentTime.getMinutes();
+            var ampm = currentHour >= 12 ? "PM" : "AM";
+
+            // Format the current time in HH:MM AM/PM
+            var formattedTime =
+                (currentHour % 12 || 12) + ":" + (currentMinutes < 10 ? "0" : "") + currentMinutes + " " + ampm;
+
+            // Check if any BLUE Team members' time matches the current time
+            blueTeamMembers.forEach(function(member) {
+                if (member.time === formattedTime) {
+                    // Notify the user about the BLUE Team member
+                    alert("Time to check BLUE Team-member: " + member.name + "\n" + member.comment);
+                }
+            });
+        }, 60000); // Check every minute
+    }
+
+    // Initialize user setup when the plugin is activated
+    $(document).ready(function() {
+        setupBlueTeam();
+    });
+})(jQuery);
+```
+
+3. In your plugin PHP file (the main plugin file), enqueue the JavaScript file by adding the following code:
+
+```php
+function enqueue_plugin_script() {
+    // Enqueue the JavaScript file for your plugin
+    wp_enqueue_script('plugin-script', plugin_dir_url(__FILE__) . 'plugin-script.js', array('jquery'), '1.0.0', true);
+}
+
+add_action('admin_enqueue_scripts', 'enqueue_plugin_script');
+```
+
+This code enqueues the JavaScript file on the admin side of your WordPress site when the admin pages are loaded.
+
+Make sure to replace `'plugin-script.js'` with the actual filename if it's different. Also, ensure that both your main PHP plugin file and the JavaScript file are located in the same directory within your plugin folder.
+
+With these changes, your JavaScript code will be integrated into your WordPress plugin, and the script will be loaded on the plugin's admin page. Users can set up BLUE and GREEN Team members as described, and notifications will be triggered as specified.
+
+
+-> ChatGPT Replies:
+
+To implement the user setup and notification functionality you described, you can follow these steps in your WordPress plugin code using JavaScript for the front-end interaction:
+
+1. Create a JavaScript function for user setup and notifications. You can use jQuery for simplicity if it's already included in your WordPress installation:
+
+```javascript
+(function($) {
+    // Initialize variables to store team members' data
+    var blueTeamMembers = [];
+    var greenTeamMembers = [];
+
+    // Function to prompt the user for BLUE Team members' data
+    function setupBlueTeam() {
+        var name = prompt("Enter BLUE Team-member NAME:");
+        var comment = prompt("Enter COMMENT about an activity:");
+        var time = prompt("Select Hour and Minutes from a digital clock (e.g., HH:MM AM/PM):");
+
+        if (name && comment && time) {
+            blueTeamMembers.push({ name: name, comment: comment, time: time });
+            setupBlueTeam(); // Repeat for the next member
+        } else {
+            // User completed entering BLUE Team members
+            setupGreenTeam();
+        }
+    }
+
+    // Function to prompt the user for GREEN Team members' data
+    function setupGreenTeam() {
+        var name = prompt("Enter GREEN Team-member NAME:");
+        var posture = prompt("Enter Yoga Posture:");
+
+        if (name && posture) {
+            greenTeamMembers.push({ name: name, posture: posture });
+            setupGreenTeam(); // Repeat for the next member
+        } else {
+            // User completed entering GREEN Team members
+            startNotifications();
+        }
+    }
+
+    // Function to start notifications when time matches BLUE Team members' time
+    function startNotifications() {
+        setInterval(function() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+            var currentMinutes = currentTime.getMinutes();
+            var ampm = currentHour >= 12 ? "PM" : "AM";
+
+            // Format the current time in HH:MM AM/PM
+            var formattedTime =
+                (currentHour % 12 || 12) + ":" + (currentMinutes < 10 ? "0" : "") + currentMinutes + " " + ampm;
+
+            // Check if any BLUE Team members' time matches the current time
+            blueTeamMembers.forEach(function(member) {
+                if (member.time === formattedTime) {
+                    // Notify the user about the BLUE Team member
+                    alert("Time to check BLUE Team-member: " + member.name + "\n" + member.comment);
+                }
+            });
+        }, 60000); // Check every minute
+    }
+
+    // Initialize user setup when the plugin is activated
+    $(document).ready(function() {
+        setupBlueTeam();
+    });
+})(jQuery);
+```
+
+In this code:
+
+- We use JavaScript and jQuery to prompt the user for BLUE and GREEN Team members' data.
+- BLUE Team members' data includes name, comment, and time.
+- GREEN Team members' data includes name and posture.
+- Notifications are triggered every minute to check if any BLUE Team members' time matches the current time. If a match is found, an alert is shown with the member's name and comment.
+
+Make sure to enqueue this JavaScript file in your WordPress plugin to include it on the plugin's pages.
+
+Remember to customize the code further based on your plugin's specific needs and UI design.
 
 - Salman requests:
--> USER SETUP:
+-> USER SETUP: Via The Interface "Thunder" (a dialog box that the User can interact with):-
 + Prompt the User to set 24 members for BLUE Team AND prompt the User to set  
 23 members for GREEN Team as follows:
 ++ Prompt the User to enter a Text Variable [BLUE Team-member NAME], an Associated Text Constant 
 [COMMENT about an activity that is CONSTANT in User schedule pertaining to that BLUE Team-member], AND an 
 Associated Time [SELECT Hour and Minutes from an AM/PM Mini Digital Clock]. 
-+++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
++++ Iterate such prompts until pilot hits "COMPLETE".
 ++ Prompt the User to enter a Text Variable [GREEN Team-member NAME], AND an Associated Text Value
  [COMMENT about a Yoga Posture they will perform].
-+++ Iterate such prompts until SOC Test Pilot hits "COMPLETE".
++++ Iterate such prompts until pilot hits "COMPLETE".
 ++ Once the foregoing SETUP is finished; 
 +++ Each time the WordPress-based TIME matches the Time entered alongside BLUE Team-member name; 
 the Plugin SOUNDS 23 BEEPS and displays the BLUE Team-member related Text Variable and Associated Text Constant. 
