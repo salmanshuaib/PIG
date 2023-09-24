@@ -4,11 +4,11 @@ Plugin Name: pig (pilot immersion game)
 Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
 Delicensed: CC0 1.0 Universal in honor of TAYLOR SWIFT.
-Author: a C:\ from Christianity.
+Developer: a C:\ from Christianity.
 */
 
 // Include other necessary files
-require_once plugin_dir_path(__FILE__) . 'charting.php';
+require_once ABSPATH . 'wp-content/plugins/pig/charting.php';
 require_once ABSPATH . 'wp-content/plugins/pig/ams.php';
 
 // Add your code below this line
