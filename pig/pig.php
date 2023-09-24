@@ -1,12 +1,13 @@
 <?php
 /*
 Plugin Name: pig-_pilot_immersion_game
-Dedicated to: TEE
-Description: Experimental game technology enabling one to pilot their Sphere Of Consciousness.
+Dedication: TEE
+Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
 Delicensed: CC0 1.0 Universal.
-Developer: ChatGPT.
-Pseudocode by: #4A2724
+Developer: 'ChatGPT'.
+Pseudocode by: #
+Made For: USA
 */
 
 // Include other necessary files
