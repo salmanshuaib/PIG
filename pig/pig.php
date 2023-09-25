@@ -5,8 +5,8 @@ Dedication: TEE
 Description: Experimental technology enabling one to pilot their Sphere Of Consciousness.
 Version: 1.0
 Delicensed: CC0 1.0 Universal.
-Developer: 'ChatGPT'.
-Pseudocode by: #
+Developer: ChatGPT.
+Pseudocode by: #4A2724
 Made For: USA
 */
 
