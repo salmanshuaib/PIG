@@ -1,0 +1,369 @@
+***Codebase:
+
+**alarmGREENS.php:-
+**4. Time-Based Notifications for GREEN Team (PHP):**
+```php
+// Example code to check and trigger notifications for GREEN Team members
+$current_time = date("h:i A");
+$sql = "SELECT * FROM green_team WHERE alarm_time = '$current_time'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        // Trigger notifications for GREEN Team members
+        echo "Notification for: " . $row["name"] . " - " . $row["text_constant"];
+    }
+} else {
+    echo "No notifications at this time.";
+}
+```
+
+**ams.php:-
+<?php
+
+/* Assignment Management System: That if you sum the digits of any number to the point that there is only one 
+digit left - it will always be one of the following digits: 1, 2, 3, 4, 5, 6, 7, 8 OR 9.  
+*/
+
+function groupLettersByResolute($num) {
+    $digits = str_split($num);
+    while (count($digits) > 1) {
+        $digits = str_split(array_sum($digits));
+    }
+    return intval($digits[0]);
+}
+?>
+
+**blueMember.php:-
+**3. User Setup for BLUE Team (PHP/MySQL):**
+```php
+// Example MySQL database connection
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "your_database";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Example SQL query to insert a BLUE Team member
+$sql = "INSERT INTO blue_team (name, text_constant, alarm_time) VALUES ('John', 'Activity', '08:30 AM')";
+if ($conn->query($sql) === TRUE) {
+    echo "BLUE Team member added successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Close the database connection
+$conn->close();
+```
+
+**charting.php:-
+function mapLettersToColumns($group, $tableNumber) {
+    // Define the column names for the tables, adjust as needed
+    $columns = [
+        1 => ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        2 => ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        3 => ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        4 => ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        5 => ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+    ];
+
+    // Map the group to columns
+    if (isset($columns[$tableNumber])) {
+        $tableColumns = $columns[$tableNumber];
+        $mappedColumns = [];
+        foreach ($group as $index => $letter) {
+            $columnIndex = $index % count($tableColumns);
+            $columnName = $tableColumns[$columnIndex];
+            $mappedColumns[$columnName] = $letter;
+        }
+        return $mappedColumns;
+    }
+
+    return [];
+}
+
+**greenMember.php:-
+**3. User Setup for GREEN Team (PHP/MySQL):**
+```php
+// Example MySQL database connection
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "your_database";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Example SQL query to insert a GREEN Team member
+$sql = "INSERT INTO green_team (name, text_constant, alarm_time) VALUES ('John', 'Activity', '08:30 AM')";
+if ($conn->query($sql) === TRUE) {
+    echo "GREEN Team member added successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Close the database connection
+$conn->close();
+```
+
+**Lag.php:-
+function groupLettersByResolute($input) {
+    $groups = [];
+    foreach (str_split($input) as $letter) {
+        $resolute = ams(mapLetterToNumber($letter));
+        $groups[$resolute][] = $letter;
+    }
+    return $groups;
+}
+
+**pig-_pilot_immersion_game.php:-
+<?php
+/*
+Plugin Name: pig-_pilot_immersion_game
+Description: Experimental technology enabling one to pilot their Sphere Of Consciousness
+Version: 1.0
+Delicensed: CC0 1.0 Universal by Salman SHUAIB in honor of Taylor Alison SWIFT
+Developer: ChatGPT
+Pseudocode by: #4A2724
+Made For: USA
+*/
+
+// Include other necessary files
+require_once ABSPATH . 'wp-content/plugins/pig-_pilot_immersion_game/charting.php';
+require_once ABSPATH . 'wp-content/plugins/pig-_pilot_immersion_game/ams.php';
+
+// Add your code below this line
+
+function enqueue_plugin_script() {
+    // Enqueue the JavaScript file for your plugin
+    wp_enqueue_script('plugin-script', plugin_dir_url(__FILE__) . 'plugin-script.js', array('jquery'), '1.0.0', true);
+}
+
+add_action('admin_enqueue_scripts', 'enqueue_plugin_script');
+
+function pig_activate() {
+    global $wpdb;
+
+    // Create tables as before
+    $table1A = $wpdb->prefix . 'table_1A';
+    $table2A = $wpdb->prefix . 'table_2A';
+    $table3A = $wpdb->prefix . 'table_3A';
+    $table1B = $wpdb->prefix . 'table_1B';
+    $table2B = $wpdb->prefix . 'table_2B';
+
+    $charset_collate = $wpdb->get_charset_collate();
+
+    // SQL queries to create the tables
+    $sql1A = "CREATE TABLE $table1A (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2A = "CREATE TABLE $table2A (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql3A = "CREATE TABLE $table3A (
+        id INT NOT NULL AUTO_INCREMENT,
+        alarm_time VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql1B = "CREATE TABLE $table1B (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    $sql2B = "CREATE TABLE $table2B (
+        id INT NOT NULL AUTO_INCREMENT,
+        associated_text VARCHAR(255) DEFAULT '' NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+
+    dbDelta($sql1A);
+    dbDelta($sql2A);
+    dbDelta($sql3A);
+    dbDelta($sql1B);
+    dbDelta($sql2B);
+
+    // Sample data for demonstration
+    $EnglishAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Replace with your input data
+
+    // Group letters by resolute
+    $letterGroups = groupLettersByResolute($EnglishAlphabet);
+
+    // Map and insert letter groups into the tables
+    foreach ($letterGroups as $resolute => $group) {
+        // Adjust table number based on your requirements
+        $tableNumber = $resolute % 5 + 1; // Assuming 5 tables numbered from 1 to 5
+
+        $table = $wpdb->prefix . 'table_' . $tableNumber;
+
+        $columnsData = mapLettersToColumns($group, $tableNumber);
+
+        if (!empty($columnsData)) {
+            $wpdb->insert($table, $columnsData);
+        }
+    }
+}
+
+register_activation_hook(__FILE__, 'pig_activate');
+
+**plugin-script.js:-
+(function($) {
+    // Initialize variables to store team members' data
+    var blueTeamMembers = [];
+    var greenTeamMembers = [];
+
+    // Function to prompt the user for BLUE Team members' data
+    function setupBlueTeam() {
+        var name = prompt("Enter BLUE Team-member NAME:");
+        var comment = prompt("Enter COMMENT about an activity:");
+        var time = prompt("Select Hour and Minutes from a digital clock (e.g., HH:MM AM/PM):");
+
+        if (name && comment && time) {
+            blueTeamMembers.push({ name: name, comment: comment, time: time });
+            setupBlueTeam(); // Repeat for the next member
+        } else {
+            // User completed entering BLUE Team members
+            setupGreenTeam();
+        }
+    }
+
+    // Function to prompt the user for GREEN Team members' data
+    function setupGreenTeam() {
+        var name = prompt("Enter GREEN Team-member NAME:");
+        var posture = prompt("Enter Yoga Posture:");
+
+        if (name && posture) {
+            greenTeamMembers.push({ name: name, posture: posture });
+            setupGreenTeam(); // Repeat for the next member
+        } else {
+            // User completed entering GREEN Team members
+            startNotifications();
+        }
+    }
+
+    // Function to start notifications when time matches BLUE Team members' time
+    function startNotifications() {
+        setInterval(function() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+            var currentMinutes = currentTime.getMinutes();
+            var ampm = currentHour >= 12 ? "PM" : "AM";
+
+            // Format the current time in HH:MM AM/PM
+            var formattedTime =
+                (currentHour % 12 || 12) + ":" + (currentMinutes < 10 ? "0" : "") + currentMinutes + " " + ampm;
+
+            // Check if any BLUE Team members' time matches the current time
+            blueTeamMembers.forEach(function(member) {
+                if (member.time === formattedTime) {
+                    // Notify the user about the BLUE Team member
+                    alert("Time to check BLUE Team-member: " + member.name + "\n" + member.comment);
+                }
+            });
+        }, 60000); // Check every minute
+    }
+
+    // Initialize user setup when the plugin is activated
+    $(document).ready(function() {
+        setupBlueTeam();
+    });
+})(jQuery);
+
+**time-for-french.js:-
+//5. TV Input Interaction (JavaScript):**
+//javascript
+// Example JavaScript code to handle TV input and recommend Yoga posture
+function handleTVInput(input) {
+    // Get the initial letter of the input
+    var initialLetter = input.charAt(0).toUpperCase();
+    
+    // Fetch GREEN Team members from the server based on the initial letter
+    // Display the options to the user and recommend a Yoga posture
+    // ...
+
+    // Example code to display a pop-up
+    var popup = document.createElement("div");
+    popup.className = "popup";
+    popup.innerHTML = "French Translated in to English: " + frenchTranslation;
+    document.body.appendChild(popup);
+}
+
+**user-setup.js:-
+(function($) {
+    // Initialize variables to store team members' data
+    var blueTeamMembers = [];
+    var greenTeamMembers = [];
+
+    // Function to prompt the user for BLUE Team members' data
+    function setupBlueTeam() {
+        var name = prompt("Enter BLUE Team-member NAME:");
+        var comment = prompt("Enter COMMENT about an activity:");
+        var time = prompt("Select Hour and Minutes from a digital clock (e.g., HH:MM AM/PM):");
+
+        if (name && comment && time) {
+            blueTeamMembers.push({ name: name, comment: comment, time: time });
+            setupBlueTeam(); // Repeat for the next member
+        } else {
+            // User completed entering BLUE Team members
+            setupGreenTeam();
+        }
+    }
+
+    // Function to prompt the user for GREEN Team members' data
+    function setupGreenTeam() {
+        var name = prompt("Enter GREEN Team-member NAME:");
+        var posture = prompt("Enter Yoga Posture:");
+
+        if (name && posture) {
+            greenTeamMembers.push({ name: name, posture: posture });
+            setupGreenTeam(); // Repeat for the next member
+        } else {
+            // User completed entering GREEN Team members
+            startNotifications();
+        }
+    }
+
+    // Function to start notifications when time matches BLUE Team members' time
+    function startNotifications() {
+        setInterval(function() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+            var currentMinutes = currentTime.getMinutes();
+            var ampm = currentHour >= 12 ? "PM" : "AM";
+
+            // Format the current time in HH:MM AM/PM
+            var formattedTime =
+                (currentHour % 12 || 12) + ":" + (currentMinutes < 10 ? "0" : "") + currentMinutes + " " + ampm;
+
+            // Check if any BLUE Team members' time matches the current time
+            blueTeamMembers.forEach(function(member) {
+                if (member.time === formattedTime) {
+                    // Notify the user about the BLUE Team member
+                    alert("Time to check BLUE Team-member: " + member.name + "\n" + member.comment);
+                }
+            });
+        }, 60000); // Check every minute
+    }
+
+    // Initialize user setup when the plugin is activated
+    $(document).ready(function() {
+        setupBlueTeam();
+    });
+})(jQuery);

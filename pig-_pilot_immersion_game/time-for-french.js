@@ -12,6 +12,6 @@ function handleTVInput(input) {
     // Example code to display a pop-up
     var popup = document.createElement("div");
     popup.className = "popup";
-    popup.innerHTML = "Recommended Yoga Posture: " + recommendedYogaPosture;
+    popup.innerHTML = "French Translated in to English: " + frenchTranslation;
     document.body.appendChild(popup);
 }
