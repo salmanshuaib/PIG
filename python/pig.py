@@ -1,6 +1,4 @@
 import os
-import pyautogui
-import time
 
 # Use a string to store the captured keyboard input
 key_logs = ""
@@ -24,7 +22,7 @@ def report(logs):
 print("Press '/' key to end logging.")
 
 while not end_logging_flag:
-    key = pyautogui.prompt(text="Press a key (or '/' to end logging)", title="Key Logger")
+    key = input("Press a key (or '/' to end logging): ")
     if key == end_logging_key:
         end_logging_flag = True
     else:
