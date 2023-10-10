@@ -6,10 +6,9 @@ Serious Kudos: written while listening to the music of:-
 TAYLOR SWIFT [taylorswift13  //TWITTER]
 ```
 
-+ /Bug/: 
-++ Error "'git' is not recognized as the name of a cmdlet"
--- INSTALL Git-SCM from git-scm.com [during setup make sure you choose the right EDITOR (e.g. Git Bash, vscode, Sublime) or you will get the above error].
--- ADMINISTRATOR:- run vscode as Administrator
+- /Bug/: 
+-- Error "'git' is not recognized as the name of a cmdlet"
+--- ADMINISTRATOR:- run vscode as Administrator
 
 -- DOWNLOAD:- Download Git from git-scm.com
 
