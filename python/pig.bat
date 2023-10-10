@@ -1,2 +1,2 @@
 @echo off
-python pig.py
+python "pig.py"
