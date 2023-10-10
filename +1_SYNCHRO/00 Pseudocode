@@ -1,3 +1,15 @@
+-> "pegasus immersive game" pseudocode [Language Edition]:
+C:\ Let us design a Wordpress PLUGIN in PHP/JavaScript that will log my key-presses at the website 
+translate.google.com only; logging such key-presses into a file. I am using Google Chrome to navigate 
+to translate.google.com.
+
+I need this to keep a running record of words I seek translation of; so I can test myself later. This means that 
+each time the output file is generated, the key-press entries are added to the end of the file's current 
+list of words listed vertically.
+
+If we can implement this solution without needing a Google Chrome extension, that is best. Otherwise, lets 
+design a Google Chrome extension.
+
 -> "pegasus immersive game" pseudocode:
 C:\ Let us design a WordPress PLUGIN in PHP/JavaScript called "Pegasus Immersive Game" that interfaces with 
 a Database (MySQL). "Pegasus" here is taken to mean one's Sphere Of Consciousness 
