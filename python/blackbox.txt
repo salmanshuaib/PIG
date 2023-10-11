@@ -1,14 +1,5 @@
-Coucou
-Mademoiselle
-Finesse
-
-Coucou
-ciel
-francais
-bonsoir
-
-Ukraine
-prevail
-against
-mines
+nous: 'we'
+Gazoduc: 'gas pipeline'
+aupres: 'with'
+cargaisons: 'cargoes'
 
