@@ -13,6 +13,11 @@ effort and intelligence.
 +++ POWER is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero/heroin from The Task Precedent. 
 Unit: Excalibur. Subunit: Watt.
 
+NOTE0: On my way back from work, I noticed a man going under his truck to fix it. I had the urge to proceed toward him, 
+but seeing the traffic and reeasoning that he could call CAA himself - I did not. Nonetheless, I realized later that 
+I should have intervened by following my feeling even facing danger. Next time.
+[Lesson]: If some one is in danger, you must follow your feeling and proceed toward them regardless of having any plan of action or method to save them. That feeling will itself create an opening or you will die a hero.
+  
 NOTE1: In our model, pilot immersion game, we incorporated the Loser First principle via getting French words from translate.google.com and adding them to a text file [blackbox.txt] without the English translation: as a test for the 
 player. It is well known that French language is losing out to English, so we chose it "over" English in this 
 instance.
