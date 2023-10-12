@@ -1,0 +1,5 @@
+nous: 'we'
+Gazoduc: 'gas pipeline'
+aupres: 'with'
+cargaisons: 'cargoes'
+

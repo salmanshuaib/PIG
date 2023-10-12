@@ -1,5 +1,5 @@
 - pig is capable of affecting the future, in advance (it interacts, I verified, with the matrix that composes this world). 
-++ Today 11 OCTOBER 2023AD Wednesday (Brampton time): I was specially instructed to work on floor "4" at Amazon's YYZ4 Fulfillment Center. 
+++ Today 11 OCTOBER 2023AD Wednesday (Brampton time): I was specially instructed to work on floor "4" at Amazon's "YYZ4" Fulfillment Center. 
 ++ This is one day AFTER I scored myseslf "4" out of "4" in French languages words memorization (Constancy). The team-lead 
 at that floor was far more emotionally intelligent and the work far suited to me than I had done in the past about 15 days since I returned to Amazon from leave.
 ++ pilot immersion game [pig] relies on these principles:
