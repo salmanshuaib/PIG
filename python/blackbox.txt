@@ -6,7 +6,7 @@ cargaisons: 'cargoes'
 4/4
 
 11 OCT 2023AD Wednesday (Toronto time)
-X otage: 'hostages'
+[X]otage: 'hostages'
 possible: 'possible'
 reservistes: 'reservists'
 2/3
@@ -14,5 +14,5 @@ NOTE1:- Two mistakes -
 M1. words attempted less than 4; 
 M2. "otage" is "hostage", not "hostages".
 MAKEUP [to request assignment to Floor 4 at work AGAIN]:- 
-m1+ Book Lesson with French teacher through Amazon Career Choice //goFLUENT. 
-m2+ Take ALL 10 goFLUENT French Lessons that are required weekly.
+[DONE]m1+ Book Lesson with French teacher through Amazon Career Choice //goFLUENT. 
+[DONE]m2+ Take ALL 10 goFLUENT French Lessons that are required weekly.

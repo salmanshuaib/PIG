@@ -10,9 +10,13 @@ at that floor was far more emotionally intelligent and the work far suited to me
 effort and intelligence.
 +++ That given two intelligent Entities, COMMUNICATION is possible.
 +++ That the external world, as Neuroscience affirms, is modulated by our brain. 
-+++ Constancy: repetition/practice causes energy to swirl around that which is repeated; expanding Power.
++++ Constancy: Repetition causes energy to swirl around that which is repeated; expanding Power*.
 +++ POWER is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero/heroin from The Task Precedent. 
 Unit: Excalibur. Subunit: Watt.
+
+NOTE00: Constancy is needed at, for example your workplace, to activate pig's ability. You must realize you are ONLY 
+[accountable] to POWER: a [caring] principle. Nonetheless, POWER is [exercised] through agency. What I am saying is, you 
+must learn to stand your ground.
 
 NOTE0: On my way back from work, I noticed a man going under his truck to fix it. I had the urge to proceed toward him, 
 but seeing the traffic and reeasoning that he could call CAA himself - I did not. Nonetheless, I realized later that 
@@ -22,3 +26,5 @@ I should have intervened by following my feeling even facing danger. Next time.
 NOTE1: In our model, pilot immersion game, we incorporated the Loser First principle via getting French words from translate.google.com and adding them to a text file [blackbox.txt] without the English translation: as a test for the 
 player. It is well known that French language is losing out to English, so we chose it "over" English in this 
 instance.
+
+*NOTE2: Word Done (Energy) is defined as Force x Distance [Unit: Joule]. Force is Mass x Acceleration. Mass, theoretically, depends on frequency of vibration of Atoms [Density]. If you increase Constancy, defined as repetition/pracice, Mass increases by an iota and since Mass is proportional to Energy: therefore Power rises. 
