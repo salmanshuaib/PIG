@@ -8,6 +8,7 @@ at that floor was far more emotionally intelligent and the work far suited to me
 +++ The Military Principle: Loser First ~ which verifies there is an intelligent user at the other end (you).
 +++ Finally, The Shuffle Prinicle: Randomization is a sign of intelligence at one end; just like shuffling cards requires 
 effort and intelligence.
++++ That given two intelligent Entities, COMMUNICATION is possible.
 +++ That the external world, as Neuroscience affirms, is modulated by our brain. 
 +++ Constancy: repetition/practice causes energy to swirl around that which is repeated; expanding Power.
 +++ POWER is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero/heroin from The Task Precedent. 
