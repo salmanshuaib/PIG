@@ -19,7 +19,7 @@ def save_records(records):
     Writes the contents of the keyboard records to a text file named 'blackbox.txt'.
     """
     with open(record_file_path, 'a') as f:  # Use 'a' (append) mode to add to the file
-        f.write(records + '\n')  # Append a newline character after each addition
+        f.write('\n' + records + '\n')  # Append a newline character after each addition
 
 # Create a tkinter window (dialog box)
 root = tk.Tk()
