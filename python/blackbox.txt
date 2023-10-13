@@ -18,26 +18,25 @@ MAKEUP [to request assignment to Floor 4 at work AGAIN]:-
 [DONE]m2+ Take ALL 10 goFLUENT French Lessons that are required weekly.no more
 
 13 October 2023 Friday (Toronto time)
-pas plus
-boite
-au milieu de
-ouvre
-salue
-appelle
-egalement
-proportionnelle
-violences
-ouvert
-
-dirigeants
-mesures
-pres
-amende
-petites princes
-petite princesse
-seisme
-au
-philippines
-eventuelle
-creuser
+pas plus: "no more"
+boite: "box"
+au milieu de: "in the middle of"
+X ouvre: "opens"
+salue: greet
+appelle: "calls"
+X egalement: "also"
+proportionnelle: "proportional"
+violences: "violence"
+X ouvert: "open"
+dirigeants: "leaders"
+mesures: "measures"
+X pres: "close"
+X amende: "fine"
+petites princes: 'little princes'
+X petite princesse: 'little princesses'
+seisme: earthquake
+au: "at"
+philippines: "Philippines"
+eventuelle: "possible"
+X creuser: 'open' // "dig"
 
