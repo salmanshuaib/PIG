@@ -5,15 +5,19 @@ at that floor was far more emotionally intelligent and the work far suited to me
 ++ pilot immersion game [pig] relies on these principles:
 +++ The Assignment Management System: that the sum of digits of any number resolves to the digits 1,2,3,4,5,6,7,8,9.
 +++ The Enginering Principle to choose the simplest option out of many.
++++ Based on AMS and EP: a CORE part of gameplay is choosing/labelling your team and clicking on their photographs based on the initial of the resultant English word ~ to 
+formulate a signalling mechanism based on Feeling (POWER). 
++++ An EXTENDED part of pig is using editors like VIM on your phone to edit blackbox.txt and RECORDING words that you LATER test yourself on; and fly your SOC. This way, for example, you 
+could learn French vocabulary even while on the bus and yet use the words as fuel for your SOC.
 +++ The Military Principle: Loser First ~ which verifies there is an intelligent user at the other end (you).
 +++ Finally, The Shuffle Prinicle: Randomization is a sign of intelligence at one end; just like shuffling cards requires 
 effort and intelligence.
 +++ That given two intelligent Entities, COMMUNICATION is possible.
 +++ That the external world, as Neuroscience affirms, is modulated by our brain.
-+++ A core part of gameplay is choosing your team and clicking on their photographs based on the initial of the resultant English word ~ to formulate a signalling mechanism based on Feeling (POWER). 
 +++ Constancy: Repetition causes energy to swirl around that which is repeated; expanding Power*.
 +++ POWER is a phenomenon, otherwise known as Feeling, that seeks to extricate a hero/heroin from The Task Precedent. 
 Unit: Excalibur. Subunit: Watt.
++++ Sleep / Meditation: Necessary to get off your, literal, POWER trip: as it is an exponentiating force that will unravel you if you don't sleep on time.
 
 NOTE00: Constancy is needed at, for example your workplace, to activate pig's ability. You must realize you are ONLY 
 [accountable] to POWER: a [caring] principle. Nonetheless, POWER is [exercised] through agency. What I am saying is, you 

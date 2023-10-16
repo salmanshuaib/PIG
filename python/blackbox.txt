@@ -40,3 +40,16 @@ philippines: "Philippines"
 eventuelle: "possible"
 X creuser: 'open' // "dig"
 
+
+militaire: military
+prepare: prepares
+attendue: expected
+escalade: escalation
+proteger: protect
+decennies: decades
+haineux: hateful
+Geneve: Geneva
+crie: yells
+confiance: trust
+connexion: connection
+
