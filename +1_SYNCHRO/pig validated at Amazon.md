@@ -9,6 +9,9 @@ at that floor was far more emotionally intelligent and the work far suited to me
 formulate a signalling mechanism based on Feeling (POWER). 
 +++ An EXTENDED part of pig is using editors like VIM on your phone to edit blackbox.txt and RECORDING words that you LATER test yourself on; and fly your SOC. This way, for example, you 
 could learn French vocabulary even while on the bus and yet use the words as fuel for your SOC.
+++++ EXTENSION also enables learning multiple skills at the same time for SOC Flight purposes. For example, one could learn both French and Coding at the same time; by feeding their 
+"snippets" into blackbox.txt and interpreting into English (pseudocode). I had earlier believed that one should only study one subject at a time; so that can immerse himself in it (enjoy the 
+gamified subject). But pig allows UNIVERSAL Gamification of Learning: one can ENJOY multiple subjects via playing pig through blackbox.txt.
 +++ The Military Principle: Loser First ~ which verifies there is an intelligent user at the other end (you).
 +++ Finally, The Shuffle Prinicle: Randomization is a sign of intelligence at one end; just like shuffling cards requires 
 effort and intelligence.
