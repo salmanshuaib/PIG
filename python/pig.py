@@ -7,10 +7,12 @@ from datetime import datetime
 end_recording_flag = False
 
 # Define the key combination to end recording (e.g., pressing '/' key)
+import os
+
 end_recording_key = "/"
 
 # Define the path to the record file
-record_file_path = os.path.join(os.getcwd(), 'blackbox.txt')
+record_file_path = "blackbox.txt"
 
 def save_records(records):
     """
