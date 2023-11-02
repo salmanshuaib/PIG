@@ -12,7 +12,7 @@ import os
 end_recording_key = "/"
 
 # Define the path to the record file
-record_file_path = "blackbox.txt"
+record_file_path = "python/blackbox.txt"
 
 def save_records(records):
     """
