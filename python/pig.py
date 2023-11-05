@@ -57,3 +57,9 @@ if key_records:
     print("Recording finished.")
 else:
     print("No keyboard input recorded.")
+
+
+
+
+
+
