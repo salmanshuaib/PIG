@@ -11,8 +11,10 @@ import os
 
 end_recording_key = "/"
 
-# Define the path to the record file
-record_file_path = "python/blackbox.txt"
+# Get the directory where the script is located
+script_directory = os.path.dirname(__file__)
+# Define the relative path to the record file
+record_file_path = os.path.join(script_directory, "blackbox.txt")
 
 def save_records(records):
     """
