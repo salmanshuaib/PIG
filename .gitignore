@@ -159,3 +159,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /wordpress/wp-config.php
+
+# Ignore everything in the android directory
+/java/*
+
+# Don't ignore these specific android OpenRandom project files
+!/android/OpenRandom/app/src/main/AndroidManifest.xml
+!/android/OpenRandom/app/src/main/java/com/f/openrandom/FlashingSquaresActivity.java
+!/android/OpenRandom/app/res/drawable/PRINCESS.jpg
+!/android/OpenRandom/app/src/main/res/values/strings.xml
+!/android/OpenRandom/app/build/outputs/apk/debug/app-debug.apk
