@@ -161,11 +161,11 @@ cython_debug/
 /wordpress/wp-config.php
 
 # Ignore everything in the android directory
-/java/*
+/android/*
 
 # Don't ignore these specific android OpenRandom project files
 !/android/OpenRandom/app/src/main/AndroidManifest.xml
 !/android/OpenRandom/app/src/main/java/com/f/openrandom/FlashingSquaresActivity.java
-!/android/OpenRandom/app/res/drawable/PRINCESS.jpg
+!/android/OpenRandom/app/res/drawable/vmt.jpg
 !/android/OpenRandom/app/src/main/res/values/strings.xml
 !/android/OpenRandom/app/build/outputs/apk/debug/app-debug.apk
