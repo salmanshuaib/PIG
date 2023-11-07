@@ -1,1 +1,7 @@
-Record 1 - 2023-11-07 16:01:33
+Record 1 - 2023-11-07 16:06:54
+Input 1: ici
+Input 1: et
+Input 1: ou
+Input 1: enchantee
+Input 1: bonsoir
+Input 1: bonjour

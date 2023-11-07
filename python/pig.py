@@ -28,6 +28,7 @@ with open("blackbox.txt", "w") as file:
         # Write the date and time above each record
         file.write(f"Record {counter} - {current_date_time}\n")
         
+        print(random_number)
         # Keep asking for input until the counter matches the random number
         while True:
             user_input = input("Enter something: ")
