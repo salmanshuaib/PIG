@@ -9,26 +9,28 @@ def current_date_time():
 # Generate a random number from 1 to 9
 random_number = random.randint(1, 9)
 
-counter = 1
+Counter = 1
 print(random_number)
 
-def Constancy(user_input):
-    for counter in range(1, random_number):
-        if (counter == random_number):
+def Constancy():
+    for Counter in range(1, random_number):
+        if (Counter == random_number):
             break
         user_input = input("Enter something you have memorized: ")
-        counter = counter + 1
+        Counter = Counter + 1
         return user_input
 
 
 def written(user_input):
+    ui = user_input
     with open("blackbox.txt", "w") as file:
         # Write the date and time above each record
         file.write(f"Difficulty {random_number} //{current_date_time}\n")
-        file.write(f"Input {counter}: {user_input}\n")
+        file.write(f"Input {Counter}: {ui}\n")
         file.close()
         return file
-    
 
-user_input = input("Enter something you have memorized: ")
-written(Constancy(user_input))
+while (counter != random_number):
+     
+
+Call = 

@@ -1,2 +1,2 @@
-Difficulty 3 //<function current_date_time at 0x000001E5884E6840>
-Input 1: ou
+Difficulty 7 //<function current_date_time at 0x0000022A624E6840>
+Input 0: ou
