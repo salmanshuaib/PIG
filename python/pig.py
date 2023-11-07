@@ -12,7 +12,7 @@ random_number = random.randint(1, 9)
 counter = 1
 print(random_number)
 
-def Constancy():
+def Constancy(user_input):
     for counter in range(1, random_number):
         if (counter == random_number):
             break
@@ -30,4 +30,5 @@ def written(user_input):
         return file
     
 
-
+user_input = input("Enter something you have memorized: ")
+written(Constancy(user_input))

@@ -1,8 +1,2 @@
-Record 1 - 2023-11-07 16:06:54
-Input 1: ici
-Input 1: et
+Difficulty 3 //<function current_date_time at 0x000001E5884E6840>
 Input 1: ou
-Input 1: enchantee
-Input 1: bonsoir
-Input 1: bonjour
-a
