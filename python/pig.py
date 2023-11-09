@@ -36,6 +36,7 @@ while (counter != random_number):
     thatsY = (y, xfile)
     written(thatsY)
 
+
 xfile.close()     
 
  
