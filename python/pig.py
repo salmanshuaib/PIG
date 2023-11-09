@@ -9,7 +9,7 @@ def current_date_time():
 # Generate a random number from 1 to 9
 random_number = random.randint(1, 9)
 
-Counter = 1
+counter = 1
 print(random_number)
 
 def Constancy():
@@ -20,17 +20,22 @@ def Constancy():
         Counter = Counter + 1
         return user_input
 
+def written(ans, xfile):
+    mu = xfile
+    ui = ans
+    # Write the date and time above each record
+    mu.write(f"Difficulty {random_number} //{current_date_time}\n")
+    mu.write(f"Input {counter}: {ui}\n")
+    mu.close()
+    return mu
 
-def written(user_input):
-    ui = user_input
-    with open("blackbox.txt", "w") as file:
-        # Write the date and time above each record
-        file.write(f"Difficulty {random_number} //{current_date_time}\n")
-        file.write(f"Input {Counter}: {ui}\n")
-        file.close()
-        return file
 
+xfile = open("blackbox.txt", "w")
 while (counter != random_number):
-     
+    y = Constancy()
+    thatsY = (y, xfile)
+    written(thatsY)
 
-Call = 
+xfile.close()     
+
+ 
