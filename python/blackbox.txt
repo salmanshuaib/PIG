@@ -1,0 +1,2 @@
+Difficulty 7 //<function current_date_time at 0x000001F0B7465940>
+Input 12: et
