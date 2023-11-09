@@ -29,7 +29,6 @@ def written(Xfile, ans):
     mu.close()
     return mu
 
-
 Xfile = open("blackbox.txt", "w")
 while (counter != random_number):
     y = Constancy()
