@@ -20,8 +20,8 @@ def Constancy():
         Counter = Counter + 1
         return user_input
 
-def written(ans, xfile):
-    mu = xfile
+def written(Xfile, ans):
+    mu = Xfile
     ui = ans
     # Write the date and time above each record
     mu.write(f"Difficulty {random_number} //{current_date_time}\n")
@@ -30,13 +30,13 @@ def written(ans, xfile):
     return mu
 
 
-xfile = open("blackbox.txt", "w")
+Xfile = open("blackbox.txt", "w")
 while (counter != random_number):
     y = Constancy()
-    thatsY = (y, xfile)
-    written(thatsY)
+    thatsY = Xfile
+    written(thatsY, y)
 
 
-xfile.close()     
+Xfile.close()     
 
  
