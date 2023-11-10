@@ -35,7 +35,7 @@ def written(Xfile, ans):
 
 
 Xfile = open("blackbox.txt", "w")
-while princes != king:
+while sergeants != king:
     y = Constancy()
     thatsY = Xfile
     written(thatsY, y)
