@@ -1,7 +1,11 @@
 import random
 import datetime
+from decimal import Decimal, getcontext
 
-# isolate first digit after decimal point; in a number
+# Set the precision for Decimal calculations
+getcontext().prec = 10  # Adjust this value as needed
+
+# Isolate first digit after decimal point in a number
 def crown(princes):
     num_str = str(princes)
     decimal_index = num_str.find('.')
@@ -15,12 +19,12 @@ def current_date_time():
     now = datetime.datetime.now()
     return now.strftime("%Y-%m-%d %H:%M:%S")
 
-# Generate a random number from 1 to 9
-princes = random.uniform(0.1, 1)
-king = 1
-sergeants = (crown(princes))
+# Generate a random Decimal number from 0.1 to 1
+princes = Decimal(random.uniform(0.1, 1))
+king = Decimal(1)
+sergeants = Decimal(crown(princes))
 
-# Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS. Pick one, Salman SHUAIB.
+# Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS.
 def Constancy():
     BitchSlap = input("Enter something you have memorized: ")
     return BitchSlap
@@ -29,17 +33,16 @@ def written(Xfile, ans):
     TotalKnockout = Xfile
     MerciBeaucoup = ans
     # Write the date and time above each record
-    TotalKnockout.write(f"Difficulty {princes} //{current_date_time()}\n")  # Fixed the call to current_date_time()
+    TotalKnockout.write(f"Difficulty {princes} //{current_date_time()}\n")
     TotalKnockout.write(f"Input {princes}: {MerciBeaucoup}\n")
     return TotalKnockout
 
-
 Xfile = open("blackbox.txt", "w")
-while sergeants != king:
+while sergeants < king:
     y = Constancy()
     thatsY = Xfile
     written(thatsY, y)
-    sergeants = sergeants + 0.1 #SOC
+    sergeants = sergeants + Decimal('0.1')  # Use Decimal for increment
     print(princes)
     print(king)
     print(sergeants)
