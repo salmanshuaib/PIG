@@ -22,7 +22,7 @@ def current_date_time():
 # Generate a random Decimal number from 0.1 to 1
 princes = Decimal(random.uniform(0.1, 1))
 king = Decimal(1)
-sergeants = Decimal(crown(princes))
+sergeants = Decimal(crown(princes)) 
 
 # Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS.
 def Constancy():
@@ -35,9 +35,10 @@ def written(Xfile, ans):
     # Write the date and time above each record
     TotalKnockout.write(f"Difficulty {princes} //{current_date_time()}\n")
     TotalKnockout.write(f"Input {princes}: {MerciBeaucoup}\n")
+    
     return TotalKnockout
 
-Xfile = open("blackbox.txt", "w")
+Xfile = open("blackbox.txt", "a")
 while sergeants < king:
     y = Constancy()
     thatsY = Xfile
