@@ -6,7 +6,7 @@ def crown(princes):
     num_str = str(princes)
     decimal_index = num_str.find('.')
     if decimal_index != -1 and decimal_index + 1 < len(num_str):
-        return int(num_str[decimal_index + 1])
+        return (round(int(num_str[decimal_index + 1]))/10)
     else:
         return None
 
@@ -18,7 +18,7 @@ def current_date_time():
 # Generate a random number from 1 to 9
 princes = random.uniform(0.1, 1)
 king = 1
-pilots = (crown(princes))
+sergeants = (crown(princes))
 
 # Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS. Pick one, Salman SHUAIB.
 def Constancy():
@@ -35,13 +35,13 @@ def written(Xfile, ans):
 
 
 Xfile = open("blackbox.txt", "w")
-while pilots != king:
+while princes != king:
     y = Constancy()
     thatsY = Xfile
     written(thatsY, y)
-    pilots = pilots + 0.1 #SOC
-    print(pilots)
+    sergeants = sergeants + 0.1 #SOC
     print(princes)
     print(king)
+    print(sergeants)
 
 Xfile.close()
