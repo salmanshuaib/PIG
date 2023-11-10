@@ -17,32 +17,31 @@ def current_date_time():
 
 # Generate a random number from 1 to 9
 princes = random.uniform(0.1, 1)
-emperor = 1
-kings = (crown(princes))/10
-
-princnes = 10
-print(kings)
+king = 1
+pilots = (crown(princes))
 
 # Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS. Pick one, Salman SHUAIB.
-def Constancy(pilots):
+def Constancy():
     BitchSlap = input("Enter something you have memorized: ")
-    pilots = pilots + 1
     return BitchSlap
 
 def written(Xfile, ans):
     TotalKnockout = Xfile
     MerciBeaucoup = ans
     # Write the date and time above each record
-    TotalKnockout.write(f"Difficulty {kings} //{current_date_time()}\n")  # Fixed the call to current_date_time()
+    TotalKnockout.write(f"Difficulty {princes} //{current_date_time()}\n")  # Fixed the call to current_date_time()
     TotalKnockout.write(f"Input {princes}: {MerciBeaucoup}\n")
     return TotalKnockout
 
 
 Xfile = open("blackbox.txt", "w")
-while kings != emperor:
-    y = Constancy(princes)
+while pilots != king:
+    y = Constancy()
     thatsY = Xfile
     written(thatsY, y)
-    kings = kings + 0.1
+    pilots = pilots + 0.1 #SOC
+    print(pilots)
+    print(princes)
+    print(king)
 
 Xfile.close()
