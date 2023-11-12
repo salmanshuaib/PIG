@@ -1,6 +1,7 @@
 import random
 import datetime
 from decimal import Decimal, getcontext
+import string
 
 # Set the precision for Decimal calculations
 getcontext().prec = 10  # Adjust this value as needed
@@ -24,6 +25,9 @@ princes = Decimal(random.uniform(0.1, 1))
 king = Decimal(1)
 sergeants = Decimal(crown(princes)) 
 
+# Generate a random character from A to Z for the session
+session_heading = random.choice(string.ascii_uppercase)
+
 # Admission: Either BS can be returned for BS [OR] Surrender can be returned for BS.
 def Constancy():
     BitchSlap = input("Enter something you have memorized: ")
@@ -32,13 +36,15 @@ def Constancy():
 def written(Xfile, ans):
     TotalKnockout = Xfile
     MerciBeaucoup = ans
-    # Write the date and time above each record
     TotalKnockout.write(f"Difficulty {princes} //{current_date_time()}\n")
     TotalKnockout.write(f"Input {princes}: {MerciBeaucoup}\n")
-    
     return TotalKnockout
 
 Xfile = open("blackbox.txt", "a")
+
+# Write the session heading once at the beginning of the session
+Xfile.write(f"Session {session_heading} //{current_date_time()}\n")
+
 while sergeants < king:
     y = Constancy()
     thatsY = Xfile
@@ -46,6 +52,6 @@ while sergeants < king:
     sergeants = sergeants + Decimal('0.1')  # Use Decimal for increment
     print(princes)
     print(king)
-    print(sergeants)
+    print(sergeants) 
 
 Xfile.close()
