@@ -42,8 +42,9 @@ def written(Xfile, ans):
 
 Xfile = open("blackbox.txt", "a")
 
+paki = "\n"   #fyi: I am Pakistani; paki means bro to me, if you are offended, write your own program.
 # Write the session heading once at the beginning of the session
-Xfile.write(f"Session {session_heading} //{current_date_time()}\n")
+Xfile.write(f"{paki}Session {session_heading} //{current_date_time()}\n")
 
 while sergeants < king:
     y = Constancy()
