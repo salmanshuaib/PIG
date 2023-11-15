@@ -1,3 +1,156 @@
+10 OCT 2023AD Tuesday (Toronto time)
+nous: 'we'
+Gazoduc: 'gas pipeline'
+aupres: 'with'
+cargaisons: 'cargoes'
+4/4
+
+11 OCT 2023AD Wednesday (Toronto time)
+[X]otage: 'hostages'
+possible: 'possible'
+reservistes: 'reservists'
+2/3
+NOTE1:- Two mistakes - 
+M1. words attempted less than 4; 
+M2. "otage" is "hostage", not "hostages".
+MAKEUP [to request assignment to Floor 4 at work AGAIN]:- 
+[DONE]m1+ Book Lesson with French teacher through Amazon Career Choice //goFLUENT. 
+[DONE]m2+ Take ALL 10 goFLUENT French Lessons that are required weekly.no more
+
+13 October 2023 Friday (Toronto time)
+pas plus: "no more"
+boite: "box"
+au milieu de: "in the middle of"
+X ouvre: "opens"
+salue: greet
+appelle: "calls"
+X egalement: "also"
+proportionnelle: "proportional"
+violences: "violence"
+X ouvert: "open"
+dirigeants: "leaders"
+mesures: "measures"
+X pres: "close"
+X amende: "fine"
+petites princes: 'little princes'
+X petite princesse: 'little princesses'
+seisme: earthquake
+au: "at"
+philippines: "Philippines"
+eventuelle: "possible"
+X creuser: 'open' // "dig"
+
+
+militaire: military
+prepare: prepares
+attendue: expected
+escalade: escalation
+proteger: protect
+decennies: decades
+haineux: hateful
+Geneve: Geneva
+crie: yells
+confiance: trust
+connexion: connection
+
+17 October 2023AD TUESDAY Toronto
+a bientot see you soon
+Professeur
+
+17 October 2023AD TUESDAY Toronto
+enchantee pleased to meet you
+
+18 October 2023AD WEDNESDAY Toronto
+le frere brother
+la soeur sister
+enchantee pleased to meet you
+alor so
+a bientot see you soon
+a demain see you tomorrow
+bonjour hello
+le pere father
+la mere mother
+steps 22206
+
+18 October 2023AD WEDNESDAY Toronto
+agreable pleasant 
+avare stingy
+beau beautiful
+bon good
+cher dear / expensive
+chic stylish
+content happy
+costaud sturdy (of a person)
+dernier final / last
+desole sorry
+difficile difficult
+drole funny
+excellent excellent
+facile easy
+fantastique wonderful
+fatigue tired
+formidable fabulous
+fort strong
+grand large
+gros fat
+
+19 October 2023AD THURSDAY Toronto
+STEPS 16238
+ASSERTIONS 1 [40 minutes]
+assez
+assez de enough
+aujourd'hui today
+aussi also
+beaucoup very much
+bien very well
+donc therefore
+et and
+ici here
+la'bas
+maintenant now
+mais but
+ou or
+parfois sometimes
+peu 
+plutot
+quelquefois
+rarement
+si if
+souvent 
+toujours always
+tres
+trop
+un peu 
+SCORE: 16/26
+
+01 November 2023AD WEDNESDAY Toronto
+Le negation //The Negation
+!
+Sergente //Sergeant
+
+01 November 2023AD WEDNESDAY Toronto
+defendre //defend
+civile //civilian
+"les indications" //"indications"
+et //and
+ou //or
+corps //bodies
+video //video
+
+01 November 2023AD WEDNESDAY Toronto
+test
+
+
+01 November 2023AD WEDNESDAY Toronto
+dimensions dimensions
+saisie seized
+diplomatique diplomatic
+prise taken
+heure hour
+
+04 November 2023AD SATURDAY Toronto
+ici
+
 Session B //2023-11-12 15:04:52
 Difficulty 0.99841741471331502122410483934800140559673309326171875 //2023-11-12 15:04:52
 Input 0.99841741471331502122410483934800140559673309326171875: et
@@ -107,3 +260,15 @@ Difficulty 0.37436226756995216735646181405172683298587799072265625 //2023-11-12 
 Input 0.37436226756995216735646181405172683298587799072265625: francais
 Difficulty 0.37436226756995216735646181405172683298587799072265625 //2023-11-12 19:35:47
 Input 0.37436226756995216735646181405172683298587799072265625: au revoir
+
+Session F //2023-11-15 14:15:38
+Difficulty 0.7889999873531199359177890073624439537525177001953125 //2023-11-15 14:15:43
+Input 0.7889999873531199359177890073624439537525177001953125: et
+Difficulty 0.7889999873531199359177890073624439537525177001953125 //2023-11-15 14:15:46
+Input 0.7889999873531199359177890073624439537525177001953125: enchantee
+Difficulty 0.7889999873531199359177890073624439537525177001953125 //2023-11-15 14:15:48
+Input 0.7889999873531199359177890073624439537525177001953125: ici
+
+Session G //2023-11-15 14:16:31
+Difficulty 0.968963175017055977633617658284492790699005126953125 //2023-11-15 14:16:35
+Input 0.968963175017055977633617658284492790699005126953125: oui
