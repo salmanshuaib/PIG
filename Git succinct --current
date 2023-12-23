@@ -11,6 +11,7 @@ TAYLOR SWIFT [taylorswift13  //TWITTER]
 --- ADMINISTRATOR:- run vscode as Administrator
 
 -- DOWNLOAD:- Download Git from git-scm.com
+-- DOWNLOAD:- Python (3.xx) for your computer's Architecture, e.g. 64bit, from [https://www.python.org/downloads/] and make sure to do a CUSTOM INSTALL - so you can choose adding Python to PATH.
 
 - [rejected] main -> main (fetch first)
   error: failed to push some refs to 'https://github.com/MIL7564/csaid.git'
